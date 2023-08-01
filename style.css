@@ -1,0 +1,1044 @@
+/*  
+COLOR GUIDE: 
+ACCENT #2dff9f
+SECOND #863ac7
+purple: #
+black: #111
+*/
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+  clear: both;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #111111 !important;
+  color: #F7F7F7;
+  background-color: #111111;
+}
+
+p {
+  color: #F7F7F7;
+}
+
+a{
+  color: inherited;
+  text-decoration: none;
+}
+
+.clear{
+  all: initial;
+}
+
+.darkmode {
+
+  color: #F7F7F7;
+}
+
+.rel {
+  position: relative;
+}
+
+.menu {
+  background-color: #111111;
+/*   position: fixed; */
+  top: 0;
+  width: 100%;
+}
+
+.bg-texture {
+  height: 100%;
+  width: 100%;  
+  background-image: url(https://images.unsplash.com/photo-1566041510394-cf7c8fe21800?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+  mix-blend-mode: multiply;
+  background-attachment: fixed;
+  z-indez: 0;
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  
+}
+
+
+/*  TEXTO */
+
+.titulo {
+  text-align: center;
+  font-size: 4em;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: -5px;
+  /* cor principal*/
+  color: #dedede;
+  font-family: 'Quicksand', sans-serif;
+  line-height:2em;
+}
+
+.titulo a{
+  text-decoration: none;
+}
+
+.subtitulo{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+  color:#2dff9f;
+}
+
+.paragrafo {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* ELEMENTOS */
+
+.botao {
+  display: inline;
+  padding: 1%;
+  color: #2dff9f;
+  text-decoration: none;
+}
+
+.secao {
+  padding-top: 15%;
+  padding-bottom: 15%;
+  max-width: 100vw;
+  margin: 0px;
+  margin-top: -20px;
+ /* background-color: #111111;*/
+  color: #F7F7F7;
+}
+
+.banner {
+  padding: 100px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 500px;
+  box-shadow: inset 0px 15px 90px -30px black;
+  overflow: hidden;
+  background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+Estar/Imagem+teste+-+ambientada+ajustada.jpg');
+}
+
+
+.banner-degrade{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left:0;
+ background: linear-gradient(0deg, rgba(17,17,17,1) 0%, rgba(17,17,17,0) 100%);
+  text-aligtn: center;
+}
+
+#logo {
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 100%;
+  transition: 0.3s;  
+  margin-top: 5%;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 0px 25px -15px #2dff9f;
+}
+
+#logo:hover{
+  transform: scale(1.2);
+  box-shadow: 0px 0px 25px -20px #2dff9f;
+}
+
+
+.nav {
+    border: hidden;  
+}
+
+.nav-item {
+  border-style: hidden;  
+}
+
+.nav-link {
+  all: unset;
+  border-style: none;
+  border-radius: 0px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  transition: color 0.5s;
+  margin: 0 5px;
+  padding: 8px;
+}
+
+.nav-link:hover {
+  color: #2dff9f;
+  border-style: hidden;
+}
+
+ul.nav.nav-tabs a{
+  box-sizing: border-box;
+  color: #2dff9f;
+  border: 1px solid #111111; 
+  background-color: inherit;
+  border-radius: 5px;
+}
+
+ul.nav.nav-tabs a:hover{
+  box-sizing: border-box;
+  color: #2dff9f;
+  border: 1px solid #2dff9f;
+  background-color: inherit;
+  border-radius: 5px;
+  
+}
+
+ul.nav.nav-tabs a.active {
+  box-sizing: border-box;
+  color: #000;
+  border-style: hidden; 
+  background-color: #2dff9f;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+
+.fill {
+  width: 100%;
+  display: block;
+  height: 80px;
+}
+
+.secao {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.painel {
+  height: 500px;
+}
+
+.secao-painel{
+  min-height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  padding: 0px;
+  position: relative;
+  box-shadow: 0px 0px 25px -10px black;
+}
+
+
+.painel-fundo {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  filter: blur(5px)
+}
+
+.painel-titulo {
+background: inherit;
+}
+
+.painel-titulo .titulo{
+  font-size: 2em;
+  color:#2dff9f;
+}
+
+.tab-pane {
+  height: 500px;
+  overflow-y: hidden;
+}
+/* ====================== PAINEL MENU ===================== */
+
+.painel-menu{
+	position: relative;
+	height: 100vh;
+	padding: 25px;
+	border-sizing: border-box;
+/* 	border: 15px solid rgba(255,255,255,0.0); */
+	background: #111;
+	transition-duration: 2s;
+	border-sizing: border-box;
+}
+
+.bg{
+	height: 100%;
+	width:100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: linear-gradient(145deg, rgba(59,50,43,1) 0%, rgba(17,17,17,1) 51%, rgba(17,17,17,1) 75%, rgba(27,32,34,1) 100%);
+	opacity: 0.2;
+	z-index:0;
+	transition-duration:0.7s;
+	overflow: hidden;
+}
+
+.bg img{
+	-webkit-filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.7));
+	position: absolute;
+	top: 15%;
+	right: -60%;
+	max-height: 70%;
+	opacity: 0.7;
+  transition-duration: 0.5s;
+}
+
+.bg-img-large{
+  all: unset;
+  position: absolute;
+ top: 13% !important;
+  right: -5% !important;
+  height: 68%;
+}
+
+.painel-menu:hover .bg-img-large{
+    right: -180% !important;
+} 
+
+.painel-menu .bg img:nth-child(3){
+  border: 5px solid red;
+}
+
+.painel-menu:hover .bg{
+	opacity: 1;
+}
+
+.painel-menu:hover .bg img{
+  right: -55%;
+}
+
+
+.nro{
+	color: #2dff9f;
+	position:relative;
+}
+
+.painel-menu h1{
+  font-family: 'Quicksand', sans-serif;
+	color: #dedede;
+	margin-top: 100%;
+	position:relative;
+	font-size: clamp(2rem, 70%, 2.5em); 
+	
+}
+
+.slash{
+	position: relative;
+	margin-top: 2.5%;
+	height: 10px;
+	width: 0%;
+  background-color:#2dff9f;
+/* 	background-image: 
+    linear-gradient(145deg, 
+      #2dff9f 70%,
+      #863ac7 100%); */
+  background-size: cover;
+	transition:0.5s
+}
+
+.painel-menu:hover .slash{
+	width:100%;
+  	background-image: 
+    linear-gradient(145deg, 
+      #2dff9f 0%,
+      #863ac7 100%);
+}
+
+.box:hover .slash{
+	width:100%;
+  	background-image: 
+    linear-gradient(145deg, 
+      #2dff9f 0%,
+      #863ac7 100%);
+}
+
+.slash-full{
+	position: relative;
+	margin-top: -50px;
+	height: 10px;
+	width: 25%;
+  margin: 0 auto;
+  background-image: 
+    linear-gradient(145deg, 
+      #2dff9f 0%,
+      #863ac7 100%);	
+	transition:0.5s
+}
+
+/* ====================== ROW BOX ===================== */
+.box {
+  position: relative;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.box h3{
+ position: absolute; 
+  z-index: 1;
+ bottom: 1rem;
+ left: 1rem; 
+  text-shadow: 0px 0px 0px black;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.box img{
+  display: block;
+    height: 100%;
+  width: 100%;
+  box-shadow: 0px 15px 25px -10px black;
+  opacity: 0.3;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.box:hover img{
+  opacity: 1;
+}
+
+.box:hover h3{
+  text-shadow: 0px 5px 20px black;
+  color: white;
+}
+
+.box .slash{
+  position: absolute;
+  width: 0%;
+  bottom: 1rem;
+  left: 1rem;
+  
+}
+
+.box:hover .slash{
+	width:90%;
+  z-index:2;
+  box-shadow: 0px 5px 20px black
+}
+
+
+/* ====================== MODAL ===================== */
+
+.modal-content{
+  height: 900px;
+  overflow-y: scroll !important;
+  overflow-X: hidden;
+  bottom: 0px;
+  z-index: 5;
+}
+
+.modal button{
+  position: relative;
+  margin-top: -60px;
+  text-align: right;
+  color: #2dff9f;
+  background-color: transparent;
+  border-style: none;
+  
+}
+
+.card-modal{
+  border-style: none;
+  border-radius: 0px;
+  display: block;
+  margin: 5px;
+  padding: 0px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+
+/* ====================== MANSONRY GRID MODAL ===================== */
+
+.grid::before{
+  all: unset;
+}
+
+.grid-item::before{
+  all: unset;
+}
+
+.grid-item {
+  display: block;
+  margin: 5px;
+  padding: 0px;
+  float: left;
+  width: 300px;
+  height: 300px;
+  transition-duration: 0.5s;
+}
+
+.grid-item--landscape { width: 428px; height: 300px; } 
+
+.grid-item img{
+  display: block;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 15px 25px -10px black;
+}
+
+/* ====================== Vitrine ===================== */
+
+.vitrine {
+  height: 105vw;
+  width: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform: rotate(90deg); 
+  padding: 0px;
+  position: absolute;
+  left: 20vw;
+  top: -25vw;
+}
+
+.vitrine-item {
+  transform: rotate(-90deg);  
+  height: 500px;
+  width: 500px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.vitrine-item-inner {
+  height: 100%;
+  width: 100%;
+  
+  background-size: cover;
+  background-position: center;
+  
+  transition: height 1s, width 1s;
+}
+
+.vitrine-item-inner:hover {
+    height: 110%;
+    width: 110%;
+    background-position: center;
+}
+
+.arte {
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 15px -5px black;
+  margin: 8px;
+    transition: height 1s, width 1s, box-shadow 1s;
+}
+
+.arte:hover {
+  height: 350px;
+  width: 350px;
+  box-shadow: 0px 0px 35px -10px black;
+}
+
+
+.char {
+  clip-path: polygon(0 0, 59% 0, 100% 85%, 0 100%);
+  z-index: 2;
+  transition: clip-path 2s, z-index,0.5s;
+}
+
+.char:hover {
+   z-index: 3;
+  clip-path: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+}
+
+
+/* ====================== Zoom ===================== */
+.zoom-pai {
+    min-width: 300px; 
+    height: 300px;
+    margin: 5em;
+    overflow: hidden;
+    margin: 5px 20px;
+    display: inline-flex;
+}
+
+.zoom-filho {
+    width: 100%;
+  height: 100%;
+  background-color: black; /* fallback color */
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0px 0px 25px black;
+  transition: 1s;
+}
+
+.zoom-pai:hover .zoom-filho,
+.zoom-pai:focus .zoom-filho {
+  transform: scale(1.2);
+  box-shadow:  inset 0px 0px 50px black;
+}
+
+/* ====================== Webkit Sombra ===================== */
+.sombra{
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.7));
+}
+
+
+.img-banner {
+  width: 100%;
+}
+/* ====================== Accordeon ===================== */
+.acordeon
+{
+    position: absolute;
+    right: 20%;
+    width: 500px;
+    height: 500px;
+    margin-top: 140px;
+    transform: rotate(-30deg)
+  skew(25deg) scale(.7);
+}
+.acordeon img
+{
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+}
+
+
+.acordeon img:nth-child(5)
+{
+    transform: translate(200px,-200px);
+    opacity: 1;
+}
+.acordeon img:nth-child(4)
+{transform: translate(150px,-150px);
+    opacity: .8;  
+}
+.acordeon img:nth-child(3)
+{
+    transform: translate(100px,-100px);
+    opacity: .6;  
+
+}
+.acordeon img:nth-child(2)
+{
+    transform: translate(70px,-70px);
+    opacity: .5;
+
+}
+.acordeon img:nth-child(1)
+{
+    transform: translate(30px,-30px);
+    opacity: .4;
+}
+
+.acordeon:hover img:nth-child(5)
+{
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+.acordeon:hover img:nth-child(4)
+{
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+.acordeon:hover img:nth-child(3)
+{
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+.acordeon:hover img:nth-child(2)
+{
+    transform: translate(0,0);
+    opacity: 1;
+}
+.acordeon:hover img:nth-child(1)
+{
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+
+.slide-foto {
+  background-size: cover;
+  background-position: center;
+  height:500px;
+  width:500px;
+}
+
+.tab-pane {
+  height:600px;
+}
+
+/* ====================== Swiper ===================== */
+
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 400px;
+      height: 400px;
+      overflow: hidden;
+      filter: blur(2px);
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+    
+    .swiper-slide video {
+      display: block;
+      width: 100%;
+    }
+    
+ .swiper-slide-active {
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.swiper-button-next, .swiper-button-prev,{
+  color: #2dff9f !important;
+}
+/* ================ PHONE ================== */
+.phone{
+  position: relative;
+  box-sizing: border-box;
+  background-color: red;
+  width: 360px;
+  height: 650px;
+  border-radius: 50px;
+  border: 2px solid #6b6e73;
+  box-shadow: inset 0px 0px 10px -2px white,
+    0px 0px 55px -20px black,
+    0px 0px 75px black;
+  background-color: #000000;
+  padding: 15px;
+  
+}
+
+.phone-screen {
+  height: 100%;
+  background-color: white;
+  border-radius: 45px;
+  position: relative;
+}
+
+.phone-camera  {
+  background-color:  #000000;
+  height: 25px;
+  margin: 0 auto;
+  width: 100px;
+  border-radius: 0px 0px 15px 15px;
+}
+
+
+.camera {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(19,8,85,1) 0%, rgba(0,0,0,1) 100%);
+  margin-left: 10px;
+}
+
+.camera-wrapper{
+  position: absolute;
+  left:50%;
+  transform: translate(-50%)
+  
+}
+
+.phone-button-left {
+  background: linear-gradient(90deg, rgba(98,101,106,1) 0%, rgba(20,25,29,1) 100%);
+  width: 3px;
+  border-radius: 5px 0px 0px 5px;
+  position: absolute;
+}
+
+.phone-button-right {
+  background: linear-gradient(90deg, rgba(20,25,29,1) 0%, rgba(98,101,106,1) 100%);;
+  width: 3px;
+  border-radius: 5px 0px 0px 5px;
+  position: absolute;
+}
+
+.phone-container {
+  background: blue;
+  height: 90%;
+  width: 300px;
+  position: absolute; 
+  left: 0;
+  right: 0;
+  top: 25px;
+  border-radius: inherit;
+}
+
+.insta-alt {
+  all: unset;
+  border-size: border-box;
+  border: 5px solid red;
+}
+
+
+
+.foto-insercao {
+  height: 400px;
+  width: 400px;
+  box-shadow: 0px 0px 20px #1a1a18;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  z-index: 5;
+}
+
+
+/* JUXTAPOSE */
+
+.jx-controller {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	height: 60px;
+	width: 9px;
+	margin-left: -3px;
+	background-color: red;
+}
+
+div.jx-handle.transition {
+	transition: left .5s ease;
+}
+
+a.jx-knightlab {
+  opacity: 0;
+}
+
+/* ================ CATÁLOGO ====================*/
+
+
+.cover {
+  display: inline-block;
+  height: 200px;
+	width: 320px;
+	margin: 15px;
+	border-radius: 2px;
+}
+
+@media screen and (max-width: 700px) {
+	.container {
+		width : 100%;
+		position: relative;
+		transform: translate(0%, 0%);
+		top: 0;
+		left: 0;
+	}
+	.cover {
+		display: block;
+		height: 200px;
+		width: 320px;
+		margin: 15px auto;
+	}
+}
+
+.atvImg {
+	border-radius: 2px;
+	transform-style: preserve-3d;
+	-webkit-tap-highlight-color: rgba(#000,0);
+}
+
+.atvImg img {
+	border-radius: 2px;
+	box-shadow: 0 2px 8px rgba(14,21,47,0.25);
+}
+
+.atvImg-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 2px;
+	transition: all 0.2s ease-out;
+}
+
+.atvImg-container.over .atvImg-shadow {
+	box-shadow: 0 45px 100px rgba(0,0,0,0.4), 0 16px 40px rgba(0,0,0,0.4);
+}
+
+.atvImg-layers {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 2px;
+	overflow: hidden;
+	transform-style: preserve-3d;
+}
+
+.atvImg-rendered-layer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%; 
+	left: 0%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	background-size: cover;
+	transition: all 0.1s ease-out;
+	overflow: hidden;
+	border-radius: 2px;
+}
+
+.atvImg-shadow {
+	position: absolute;
+	top: 5%; 
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	transition: all 0.2s ease-out;
+	box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+
+.atvImg-shine {
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0;
+	border-radius: 2px;
+	background: linear-gradient(135deg, rgba(255,255,255,.25) 0%,rgba(255,255,255,0) 60%);
+}
+
+/* ================ BACKGROUND ELEMENTS ====================*/
+.bokeh{
+	height: 250px;
+	width: 250px;
+	background-color: #2dff9f;
+	border-radius: 100%;
+/* 	border-right: 25px solid #8c00ff; */
+	filter: blur(10rem);
+  z-index: -1;
+  position: absolute;
+}
+
+
+.bokeh:nth-child(even){
+  background-color: #863ac7;
+}
+
+
+
+.grid-square{
+  height: 100%;
+  width: 35%;
+  background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/elementos/grid.png');
+   background-size: 30px; 
+  top: 0px;
+  right: 0px;
+    z-index: -1;
+  position: absolute;
+  mix-blend-mode: soft-light;
+  opacity: 1;
+}
+
+.waves{
+  background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/elementos/waves.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.cube-pattern{
+  top: 0px; left: 0px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/elementos/cube.png');
+  background-size: 250px;
+  filter: invert(100%);
+  opacity: 0.4; 
+}
+
+.cube-pattern:nth-child(odd){
+  background-blend-mode: hard-light; 
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #111;
+  transition-duration: 5s
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2dff9f;
+
+}
+
+/* ============================== */
+
+.puxador{
+	height:500px;
+	width: 100px;
+	display: inline-block;
+	box-shadow: 0px 15px 25px black;
+}
+
+.anim-container{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+.ring {
+  position: absolute;
+  top:10%;
+  right: 33%;
+  background-color: #863ac7;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  opacity: 0.8; 
+}
+
+.enviroment{
+  position: absolute;
+  height:100%;
+  width:100%;
+  top:0px;
+  left:0px;
+  background-image: url("https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/elementos/Ambient.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+/*   filter: invert(100%); */
+  mix-blend-mode: soft-light;
+  opacity: 1;
+  
+
+
+}
