@@ -87,7 +87,7 @@ a{
 .subtitulo{
     font-family: 'Quicksand', sans-serif;
     font-size: 2em;
-  color:#2dff9f;
+    color:#2dff9f;
 }
 
 .paragrafo {
@@ -152,7 +152,6 @@ a{
   box-shadow: 0px 0px 25px -20px #2dff9f;
 }
 
-
 .nav {
     border: hidden;  
 }
@@ -203,7 +202,13 @@ ul.nav.nav-tabs a.active {
   font-weight: bold;
 }
 
-
+.fix{
+  position: fixed;
+  top:0;
+  width:100%;
+  background-color: #111;
+  z-index: 20;
+}
 
 .fill {
   width: 100%;
@@ -268,6 +273,7 @@ background: inherit;
 	border-sizing: border-box;
 }
 
+
 .bg{
 	height: 100%;
 	width:100%;
@@ -292,10 +298,11 @@ background: inherit;
   transition-duration: 0.5s;
 }
 
+
 .bg-img-large{
   all: unset;
   position: absolute;
- top: 13% !important;
+  top: 13% !important;
   right: -5% !important;
   height: 68%;
 }
@@ -304,9 +311,6 @@ background: inherit;
     right: -180% !important;
 } 
 
-.painel-menu .bg img:nth-child(3){
-  border: 5px solid red;
-}
 
 .painel-menu:hover .bg{
 	opacity: 1;
@@ -326,9 +330,8 @@ background: inherit;
   font-family: 'Quicksand', sans-serif;
 	color: #dedede;
 	margin-top: 100%;
-	position:relative;
-	font-size: clamp(2rem, 70%, 2.5em); 
-	
+	position: relative;
+	font-size: clamp(2rem, 70%, 2.5em); 	
 }
 
 .slash{
@@ -361,18 +364,91 @@ background: inherit;
       #863ac7 100%);
 }
 
+
+/* Em celulares os paineis serão Horizontais */
+@media only screen and (max-width: 600px) {
+  .painel-menu{
+    height: 25vh;
+    padding:10px;
+  }
+  
+  .painel-menu:nth-child(1){
+    margin-top:30px;
+  }
+  
+  .painel-menu h1{
+  font-family: 'Quicksand', sans-serif;
+	color: #dedede;
+	margin-top: 5%;
+	position: relative;
+	font-size: clamp(2rem, 70%, 2.5em); 	
+  }
+  
+  .bg img{
+    top: 0%;
+    right: 0%;
+    max-height: 150%;
+  }
+  
+  .painel-menu:hover .bg img{
+    unset: all;
+  }
+  
+  .bg{
+    opacity: 0.9;
+  }
+  
+  .painel-menu:hover .bg{
+	opacity: 0.9;
+  }
+  
+  .painel-menu:hover .bg img{
+  right: 0%;
+  }
+
+.bg-img-large{
+  all: unset;
+  position: absolute;
+  top: 13% !important;
+  right: -5% !important;
+  height: 68%;
+  }
+
+  .painel-menu:hover .bg-img-large{
+    right: -5% !important;
+  } 
+  
+}
+
+
+
+
 .slash-full{
 	position: relative;
 	margin-top: -50px;
 	height: 10px;
 	width: 25%;
   margin: 0 auto;
-  background-image: 
-    linear-gradient(145deg, 
-      #2dff9f 0%,
-      #863ac7 100%);	
-	transition:0.5s
+  background: radial-gradient(#2dff9f, #863ac7, #ff7b8b, #ffaa7b);
+	background-size: 500% 800%;  
+	animation: muda-cor 10s ease infinite alternate-reverse;
 }
+
+@keyframes muda-cor {
+	0% {
+		background-position: 0% 80%;
+	}
+	50% {
+		background-position: 100% 150%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
+
+
+
 
 /* ====================== ROW BOX ===================== */
 .box {
@@ -425,11 +501,66 @@ background: inherit;
   box-shadow: 0px 5px 20px black
 }
 
+/* CELULAR */
+@media only screen and (max-width: 600px){
+  .box {
+  position: relative;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+  .box h3{
+    position: absolute; 
+    z-index: 1;
+    bottom: 1rem;
+    left: 1rem; 
+    text-shadow: 0px 0px 0px black;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .box img{
+    display: block;
+      height: 100%;
+    width: 100%;
+    box-shadow: 0px 15px 25px -10px black;
+    opacity: 0.3;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .box:hover img{
+    opacity: 1;
+  }
+
+  .box:hover h3{
+    text-shadow: 0px 5px 20px black;
+    color: white;
+  }
+
+  .box .slash{
+    position: absolute;
+    width: 0%;
+    bottom: 1rem;
+    left: 1rem;
+
+  }
+
+  .box:hover .slash{
+    width:90%;
+    z-index:2;
+    box-shadow: 0px 5px 20px black
+  }
+}
+
 
 /* ====================== MODAL ===================== */
 
 .modal-content{
-  height: 900px;
+  height: 90%;
   overflow-y: scroll !important;
   overflow-X: hidden;
   bottom: 0px;
@@ -591,16 +722,15 @@ background: inherit;
   width: 100%;
 }
 /* ====================== Accordeon ===================== */
-.acordeon
-{
+.acordeon{
     position: absolute;
     right: 20%;
     width: 500px;
     height: 500px;
     margin-top: 140px;
-    transform: rotate(-30deg)
-  skew(25deg) scale(.7);
+    transform: rotate(-30deg) skew(25deg) scale(.7);
 }
+
 .acordeon img
 {
     position: absolute;
@@ -677,6 +807,24 @@ background: inherit;
   height:600px;
 }
 
+/* MOBILE */
+@media only screen and (max-width: 600px){
+  .acordeon{
+    position: absolute;
+    left: -20%;
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    transform: rotate(-30deg) skew(25deg) scale(.5);
+  }
+  
+  .swiper-slide{
+    filter: blur(0px);
+  }
+}
+
+
+
 /* ====================== Swiper ===================== */
 
     .swiper {
@@ -685,7 +833,7 @@ background: inherit;
       padding-bottom: 50px;
     }
 
-    .swiper-slide {
+    .swiper-slide{
       background-position: center;
       background-size: cover;
       width: 400px;
@@ -998,6 +1146,27 @@ a.jx-knightlab {
 }
 
 /* ============================== */
+
+.botaotopo{
+  height: 45px;
+  width: 45px;
+  position: fixed;
+  bottom: 0.5em;
+  right: 0.5em;
+  background-color:#2dff9f;
+  border-radius: 100rem;
+  z-index: 5;
+  font-size: 3em;
+}
+
+.botaotopo a{
+  text-decoration: none;
+  color: #111;
+  position: absolute;
+  top: -8px;
+  left: 6px;
+}
+
 
 .puxador{
 	height:500px;
