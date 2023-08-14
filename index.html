@@ -87,7 +87,7 @@
    
     <!-- Capa -->
 
-<div class="row no-gutters m-0 p-0">	
+<div class="row no-gutters m-0 p-0" id="estudio">	
   
 	<div class="col-sm col-sm-pull painel-menu">
 		<div class="bg">
@@ -101,7 +101,7 @@
   
 	<div class="col-sm col-sm-push painel-menu">
 		<div class="bg">
-		  <img src="https://media.cgtrader.com/variants/M2WDe3Ung2UYypxAEwAVmEUg/64d1262c1acde2eb3beef249c4695a8ad88c958dd79db36f763bf631017addd0/render%202.png" style="transform: scale(0.5); top: 18%; right: -150%">
+		  <img src="https://clipart-library.com/images_k/transparent-video-camera/transparent-video-camera-14.png" style="transform: scale(1); transform: translateX(200px) translateY(-50px);">
 		</div>
 		<h1>Videos</h1>
 		<div class="slash"></div>
@@ -125,23 +125,51 @@
 		</div>
 		<h1>Realidade Virtual</h1>
 		<div class="slash"></div>
-    <a href="#realidadevirtual" class="stretched-link"></a>
+    <a href="#XRModal" class="stretched-link" data-bs-toggle="modal" data-bs-target="#XRModal" ></a>
 	</div>
 	</div>
+   
+     <div class="modal fade" id="XRModal" tabindex="-1" aria-labelledby="XRModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
+        <div class="row no-gutters justify-content-between">
+          <h3 class="subtitulo"> Realidade Virtual </h3> <button type="button p-0" data-bs-dismiss="modal"><i class="fas fa-x"></i></button>
+        </div>
+        <div class="container-fluid text-center ml-4">
+          
+          
+          <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Movelsul2.jpg" style="width: 60%">
+          
+        </div><!-- END CONTAINER -->
+      </div>
+    </div>
+  </div> 
+   
+ 
+   <div class="botaotopo p-2">
+     <a href="#estudio" class="streched-link" title="Voltar para o topo">^</a>
+   </div>
+   
+   
     <!-- MENU   --> 
    <div class="menu-anim-trigger"></div>
-    <div class=" menu-anim text-center justify-content-center flexbox menu py-2 navbar navbar-expand-md fixed-top position-sticky sticky-top">
+   
+   <div class="fix">
+    <div class=" menu-anim text-center justify-content-center flexbox menu py-2 navbar navbar-expand-md">     
       
-      <a class="botao navbar-brand" href="#estudio" style="border-style: hidden; color: #F7F7F7;">E-Studio</a>
+      <a class="botao navbar-brand" href="#estudio" style="border-style: hidden; color: #F7F7F7;">e-Studio</a>
       
       <a class="botao" href="#imagens">Imagens</a>
       
       <a class="botao" href="#videos">Videos</a>      
       
       <a class="botao" href="#tour360">360º</a>
-    </div>
+    </div></div>
    
 <div class="fill" style="height: 60px" id="imagens"></div>  
+     <h1 class="titulo mb-n4"> Imagens </h1>
+     <div class="slash-full mt-n4"></div>
+   </div>  
 <!-- SELEÇÃO FIRST ROW  -->
 <div class="row no-gutters p-4 pb-2">
   
@@ -678,8 +706,8 @@
       <div class="row no-gutters col-12 m-0" style="">
         <div class="cube-pattern"></div>
         
-        <div class="col-sm col-sm-push p-3 text-center rel acordeon-trigger rel" style=" height: 600px;">
-          <div class="ring"></div>
+        <div class="col-sm col-sm-push p-3 text-center rel rel" style=" height: 600px;cursor: pointer;">
+          
           
           <div class="bokeh" style="left: 50%; top: 20%;"></div>
            <div class="acordeon">
@@ -720,7 +748,7 @@ Trata-se de uma técnica que exige muito conhecimento em perspectiva de ângulo 
    
     
     <!-- FOTO IMAGENS COMEMORATIVAS -->  
-     <div class="secao" id="">
+     <div class="secao" id="" style="position: relative; z-index: 10;">
       <div class="row no-gutters col-11">  
         <div class="col-sm col-sm-push p-3 text-center"
              style="padding-top: 250px;">
@@ -961,13 +989,11 @@ Trata-se de uma técnica que exige muito conhecimento em perspectiva de ângulo 
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
+     
+      grabCursor: false,
       mousewheel: true,
-      centeredSlides: true,
-      slidesPerView: 3,
+      centeredSlides: true,      
       loop: true,
-      initialSlide: 2,
       coverflowEffect: {
         rotate: 00,
         stretch: 20,
@@ -975,6 +1001,17 @@ Trata-se de uma técnica que exige muito conhecimento em perspectiva de ângulo 
         modifier: 3,
         slideShadows: true,
       },
+      breakpoints{
+      320:{
+       effect: none,
+      slidesPerView: 1,
+      inititalSlide:1,
+    },
+      600:{
+         effect: "coverflow",         
+         slidesPerView: 2,                   
+    }
+    },
       navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
