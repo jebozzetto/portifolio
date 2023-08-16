@@ -216,6 +216,7 @@ ul.nav.nav-tabs a.active {
   height: 80px;
 }
 
+
 .secao {
   margin: 0px;
   padding: 0px;
@@ -839,7 +840,7 @@ background: inherit;
       width: 400px;
       height: 400px;
       overflow: hidden;
-      filter: blur(2px);
+/*       //filter: blur(2px); */
     }
 
     .swiper-slide img {
@@ -1157,6 +1158,8 @@ a.jx-knightlab {
   border-radius: 100rem;
   z-index: 5;
   font-size: 3em;
+  z-index: 1000;
+  transition-duration: 750ms;
 }
 
 .botaotopo a{
@@ -1165,6 +1168,11 @@ a.jx-knightlab {
   position: absolute;
   top: -8px;
   left: 6px;
+}
+
+.botaotopo:hover{
+  scale: 1.2;
+  box-shadow: 10px 10px 25px -5px black;
 }
 
 
