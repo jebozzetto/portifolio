@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>e-Studio Render</title>
+  <title>eStudio Render</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -706,7 +706,7 @@
       <div class="row no-gutters col-12 m-0" style="">
         <div class="cube-pattern"></div>
         
-        <div class="col-sm col-sm-push p-3 text-center rel rel" style=" height: 600px;cursor: pointer;">
+        <div class="col-sm col-sm-push p-3 text-center rel rel order-1 order-sm-2" style=" height: 600px;cursor: pointer;">
           
           
           <div class="bokeh" style="left: 50%; top: 20%;"></div>
@@ -730,8 +730,8 @@
         </div>
 
         
-        <div class="col-lg-4 col-sm col-sm-push-12 px-4 rel">
-          <div class="fill">&nbsp;</div>    
+        <div class="col-lg-4 col-sm col-sm-push-12 px-4 rel order-2 order-sm-1">
+          <div class="fill d-block d-sm-none">&nbsp;</div>    
                     
           <div class="titulo subtitulo" data-aos="fade-up">Foto Inserção</div>
           
@@ -748,14 +748,14 @@ Trata-se de uma técnica que exige muito conhecimento em perspectiva de ângulo 
    
     
     <!-- FOTO IMAGENS COMEMORATIVAS -->  
-     <div class="secao" id="" style="position: relative; z-index: 10;">
+     <div class="secao pt-4" id="" style="position: relative; z-index: 10;">
       <div class="row no-gutters col-11">  
-        <div class="col-sm col-sm-push p-3 text-center"
-             style="padding-top: 250px;">
+        <div class="col-sm col-sm-push p-3 text-center order-1 order-sm-2"
+             style="padding-top: 350px;">
 
 
-          <div class=" position-sticky sticky-top mx-auto">
-            <div class="fill" style="height: 200px;">&nbsp;</div>
+          <div class="position-sticky sticky-top mx-auto">
+            <div class="d-block" style="height: 200px;">&nbsp;</div>
              <div class="foto-insercao"
                style="background-image: url(https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Comemorativas/Copa/BR2739.130+zoom.jpg);
                       transform: rotate(5deg)">&nbsp;</div> 
@@ -801,7 +801,7 @@ Trata-se de uma técnica que exige muito conhecimento em perspectiva de ângulo 
         </div>
         
         <!-- TEXTO -->
-        <div class="col-sm col-sm-push px-4">
+        <div class="col-sm col-sm-push px-4 order-2 order-sm-1">
           
           <div class=" position-sticky sticky-top" id="imgcomemorativas">
             <div class="fill" style="height:250px;">&nbsp;</div>
@@ -820,7 +820,7 @@ Trata-se de uma técnica que exige muito conhecimento em perspectiva de ângulo 
     <div  class="secao" id="render">     <div class="enviroment"></div>
       <div class="row no-gutters justify-content-center m-0">
         
-        <div class="col-sm-6 col-sm-push-12 col-lg-4 col-md-6 p-3 text-center  ">
+        <div class="col-sm-6 col-sm-push-12 col-lg-4 col-md-6 p-3 text-center order-1 order-sm-2">
           <div class="bokeh" style="bottom: 5%; left: 17%; transform: rotate(-90deg)"></div>
           <div class="fill" style="height: 250px">&nbsp;</div>
 
@@ -869,7 +869,7 @@ Trata-se de uma técnica que exige muito conhecimento em perspectiva de ângulo 
      <div class="circle-pattern-w" style="height: 80%; background-size: 100px;"></div>
      
   <!-- Swiper -->
-  <div class="swiper mySwiper">
+  <div class="swiper mySwiper d-block">
     <div class="swiper-wrapper rel">
       
 <!--  PARIS  NP  -->
@@ -989,7 +989,8 @@ Trata-se de uma técnica que exige muito conhecimento em perspectiva de ângulo 
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-     
+      effect: "coverflow",         
+      slidesPerView: 2,
       grabCursor: false,
       mousewheel: true,
       centeredSlides: true,      
@@ -1001,17 +1002,6 @@ Trata-se de uma técnica que exige muito conhecimento em perspectiva de ângulo 
         modifier: 3,
         slideShadows: true,
       },
-      breakpoints{
-      320:{
-       effect: none,
-      slidesPerView: 1,
-      inititalSlide:1,
-    },
-      600:{
-         effect: "coverflow",         
-         slidesPerView: 2,                   
-    }
-    },
       navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -1021,10 +1011,9 @@ Trata-se de uma técnica que exige muito conhecimento em perspectiva de ângulo 
    </div>
  
    <div class="fill">&nbsp;</div>
-
    
     <!-- ARTES VISUAIS -->
-     <div class="secao  " id="imvisual">
+     <div class="secao" id="imvisual">
       
       <div class="titulo mt-3">
         Artes Visuais
