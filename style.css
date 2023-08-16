@@ -210,10 +210,16 @@ ul.nav.nav-tabs a.active {
   z-index: 20;
 }
 
-.fill {
+.fill, fill-out {
   width: 100%;
   display: block;
-  height: 80px;
+  min-height: 80px;
+}
+
+@media only screen and (max-width: 600px){
+  .fill-out{
+    display: none;
+  }
 }
 
 
@@ -726,8 +732,10 @@ background: inherit;
 .acordeon{
     position: absolute;
     right: 20%;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
     margin-top: 140px;
     transform: rotate(-30deg) skew(25deg) scale(.7);
 }
@@ -840,7 +848,7 @@ background: inherit;
       width: 400px !important;
       height: 400px !important;
       overflow: hidden;
-/*       //filter: blur(2px); */
+/*    //filter: blur(2px); */
     }
 
     .swiper-slide img {
