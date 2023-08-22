@@ -1242,13 +1242,14 @@ a.jx-knightlab {
 /*   filter: invert(100%); */
   mix-blend-mode: soft-light;
   opacity: 1;
-  
-
-
-}
-
+  }
 
 .video video{
   border-radius: 1em;
   box-shadow: 5px 0px 25px rgba(0, 0, 0, 1);
 }
+
+.row{
+	width:100%;
+}
+	
