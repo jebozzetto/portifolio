@@ -15,7 +15,7 @@ black: #111
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   scroll-behavior: smooth;
   color: #F7F7F7;
   background-color: #111111 !important;
