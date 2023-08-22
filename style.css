@@ -26,8 +26,8 @@ body {
     scroll-behavior: smooth;
     color: #F7F7F7;
     background-color: #111111 !important;
-    max-width: 100vw !important;
-    min-height: 100hw !important;
+/*    max-width: 100vw !important;
+    min-height: 100hw !important;*/
 }
 
 @media only screen and (max-width: 600px) {
