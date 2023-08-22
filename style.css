@@ -4,7 +4,7 @@ ACCENT #2dff9f
 SECOND #863ac7
 purple: #
 black: #111
-*/
+
 html {
  width: 100vw;
  min-width: 100vw;
@@ -12,7 +12,7 @@ html {
 
  overflow-x: hidden
  overflow-y: auto
-}
+}*/
 
 * {
     margin: 0%;
