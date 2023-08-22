@@ -1252,4 +1252,7 @@ a.jx-knightlab {
 .row{
 	width:100%;
 }
-	
+
+.body{
+	overflow-x: hidden !important;
+}
