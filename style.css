@@ -14,15 +14,17 @@ black: #111
   box-sizing: border-box;
 }
 
-html,body{overflow-x:hidden; height: 100vh; width: 100wv; }
+htlm,body{
+	height: 100hv;
+	width: 100wv;}
 
 body {
-  overflow-x: hidden !important;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   color: #F7F7F7;
   background-color: #111111 !important;
-  max-width: 100vw !important;
-  min-height: 100hw !important;
+  max-width: 100vw;
+  min-height: 100hw;
 }
 
 @media only screen and (max-width: 600px){
@@ -58,12 +60,6 @@ a{
   top: 0;
   width: 100%;
 }
-@media only screen and (max-width: 600px){
-  .menu{
-    display: none;
-  }
-}
-
 
 .bg-texture {
   height: 100%;
@@ -78,6 +74,10 @@ a{
   
 }
 
+video{
+  border-radius: 1rem;
+  box-shadow 0px 0px 25px rgba(0, 0, 0, 1);
+}
 
 /*  TEXTO */
 
@@ -744,9 +744,9 @@ background: inherit;
 /* ====================== Accordeon ===================== */
 .acordeon{
     position: absolute;
-    right: 10%;
-    width: 150%;
-    height: 150%;
+    right: 20%;
+    width: 100%;
+    height: 100%;
     max-width: 500px;
     max-height: 500px;
     margin-top: 140px;
@@ -833,10 +833,11 @@ background: inherit;
 @media only screen and (max-width: 600px){
   .acordeon{
     position: absolute;
-    left: -5%;
-    width: 250px;
-    height: 250px;
+    left: -20%;
+    width: 500px;
+    height: 500px;
     margin-top: 100px;
+    transform: rotate(-30deg) skew(25deg) scale(.5);
   }
   
   .swiper-slide{
@@ -1169,7 +1170,6 @@ a.jx-knightlab {
 /* ============================== */
 
 .botaotopo{
-  font-family: quicksand;
   height: 45px;
   width: 45px;
   position: fixed;
@@ -1182,13 +1182,6 @@ a.jx-knightlab {
   z-index: 1000;
   transition-duration: 750ms;
 }
-
-@media only screen and (max-width: 600px){
-  .botaotopo, .botaotopo a{
-    display: none;
-  }
-}
-
 
 .botaotopo a{
   text-decoration: none;
@@ -1243,17 +1236,7 @@ a.jx-knightlab {
 /*   filter: invert(100%); */
   mix-blend-mode: soft-light;
   opacity: 1;
-  }
+  
 
-.video video{
-  border-radius: 1em;
-  box-shadow: 5px 0px 25px rgba(0, 0, 0, 1);
-}
 
-.row{
-	width:100%;
-}
-
-.body{
-	overflow-x: hidden !important;
 }
