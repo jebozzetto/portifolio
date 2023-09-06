@@ -2,9 +2,8 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>e-Studio Render</title>
+  <title>eStudio Render</title>
   <link rel="stylesheet" href="./style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
 
 </head>
 <body>
@@ -69,1343 +68,1382 @@
 
   </head>
   <body>
-      <div class="darkmode">
-          <!-- JQUERY INITIALIZE-->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <div class="darkmode">
+      <!-- JQUERY INITIALIZE-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-          <!-- RELLAX -->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <!-- RELLAX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+ 
+    <!-- AOS Initialize -->
+<script>AOS.init();</script>
 
-          <!-- AOS Initialize -->
-          <script>AOS.init();</script>
+    <!-- MICROMODAL Initialize 
+<script>MicroModal.init();</script>-->
+      
+    <!-- IMAGE COMPARE  -->
+    <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
+   
+   
+    <!-- Capa -->
 
-          <!-- MICROMODAL Initialize
-        <script>MicroModal.init();</script>-->
-          <!-- IMAGE COMPARE  -->
-          <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
-
-
-          <!-- Capa -->
-
-          <div class="row no-gutters m-0 p-0" id="estudio">
-
-              <div class="col-sm col-sm-pull painel-menu">
-                  <div class="bg">
-                      <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/Mesa+Cabeceira+Logan+1009+Preto+-+F.I..png">
-                  </div>
-                  <h1>Imagens</h1>
-                  <div class="slash"></div>
-                  <a href="#imagens" class="stretched-link"></a>
-              </div>
-
-
-              <div class="col-sm col-sm-push painel-menu">
-                  <div class="bg">
-                      <img src="https://clipart-library.com/images_k/transparent-video-camera/transparent-video-camera-14.png" style="transform: scale(1); transform: translateX(200px) translateY(-50px);">
-                  </div>
-                  <h1>Videos</h1>
-                  <div class="slash"></div>
-                  <a href="#videos" class="stretched-link"></a>
-              </div>
-
-
-              <div class="col-sm col-sm-pull painel-menu">
-                  <div class="bg">
-                      <img class="bg-img-large" src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/1690230227755.JPEG">
-                  </div>
-                  <h1>360º</h1>
-                  <div class="slash"></div>
-                  <a href="#tour360" class="stretched-link"></a>
-              </div>
-
-
-              <div class="col-sm col-sm-push painel-menu">
-                  <div class="bg">
-                      <img src="https://drakemall-files-new.s3.eu-central-1.amazonaws.com/Oculus%20R-cjvwbx629007i01vyvgewqzei.png" style="transform: scaleX(-1);">
-                  </div>
-                  <h1>Realidade Virtual</h1>
-                  <div class="slash"></div>
-                  <a href="#XRModal" class="stretched-link" data-bs-toggle="modal" data-bs-target="#XRModal"></a>
-              </div>
-          </div>
-
-          <div class="modal fade" id="XRModal" tabindex="-1" aria-labelledby="XRModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                  <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
-                      <div class="row no-gutters justify-content-between">
-                          <h3 class="subtitulo"> Realidade Virtual </h3> <button type="button p-0" data-bs-dismiss="modal"><i class="fas fa-x"></i></button>
-                      </div>
-                      <div class="container-fluid text-center ml-4">
-
-
-                          <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Movelsul2.jpg" style="width: 60%">
-
-                      </div><!-- END CONTAINER -->
-                  </div>
-              </div>
-          </div>
-
-
-          <div class="botaotopo p-2">
-              <a href="#estudio" class="streched-link" title="Voltar para o topo">^</a>
-          </div>
-
-
-          <!-- MENU   -->
-          <div class="menu-anim-trigger"></div>
-
-          <div class="fix">
-              <div class=" menu-anim text-center justify-content-center flexbox menu py-2 navbar navbar-expand-md">
-
-                  <a class="botao navbar-brand" href="#estudio" style="border-style: hidden; color: #F7F7F7;">e-Studio</a>
-
-                  <a class="botao" href="#imagens">Imagens</a>
-
-                  <a class="botao" href="#videos">Videos</a>
-
-                  <a class="botao" href="#tour360">360º</a>
-              </div>
-          </div>
-
-          <div class="fill" style="height: 60px" id="imagens"></div>
-          <h1 class="titulo mb-n4"> Imagens </h1>
-          <div class="slash-full mt-n4"></div>
+<div class="row no-gutters m-0 p-0" id="estudio">	
+  
+	<div class="col-sm col-sm-pull painel-menu">
+		<div class="bg">
+			<img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/Mesa+Cabeceira+Logan+1009+Preto+-+F.I..png" >
+		</div>
+		<h1>Imagens</h1>
+		<div class="slash"></div>
+    <a href="#imagens" class="stretched-link"></a>
+	</div>
+  
+  
+	<div class="col-sm col-sm-push painel-menu">
+		<div class="bg">
+		  <img src="https://clipart-library.com/images_k/transparent-video-camera/transparent-video-camera-14.png" style="transform: scale(1); transform: translateX(200px) translateY(-50px);">
+		</div>
+		<h1>Videos</h1>
+		<div class="slash"></div>
+    <a href="#videos" class="stretched-link"></a>
+	</div>	
+	
+  
+	<div class="col-sm col-sm-pull painel-menu">
+		<div class="bg">
+			<img class="bg-img-large" src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/1690230227755.JPEG">
+		</div>
+		<h1>360º</h1>
+		<div class="slash"></div>
+    <a href="#tour360" class="stretched-link"></a>
+	</div>	
+	
+  
+	<div class="col-sm col-sm-push painel-menu">
+		<div class="bg">
+			<img src="https://drakemall-files-new.s3.eu-central-1.amazonaws.com/Oculus%20R-cjvwbx629007i01vyvgewqzei.png" style="transform: scaleX(-1);">			
+		</div>
+		<h1>Realidade Virtual</h1>
+		<div class="slash"></div>
+    <a href="#XRModal" class="stretched-link" data-bs-toggle="modal" data-bs-target="#XRModal" ></a>
+	</div>
+	</div>
+   
+     <div class="modal fade" id="XRModal" tabindex="-1" aria-labelledby="XRModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
+        <div class="row no-gutters justify-content-between">
+          <h3 class="subtitulo"> Realidade Virtual </h3> <button type="button p-0" data-bs-dismiss="modal"><i class="fas fa-x"></i></button>
+        </div>
+        <div class="container-fluid text-center ml-4">
+          
+          
+          <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Movelsul2.jpg" style="width: 60%">
+          
+        </div><!-- END CONTAINER -->
       </div>
-      <!-- SELEÇÃO FIRST ROW  -->
-      <div class="row no-gutters p-4 pb-2">
-
-          <div class="col-sm-3 col-sm-push box">
-              <h3 class="subtitulo">Sala de Estar</h3>
-              <div class="slash ">&nbsp;</div>
-              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/Conjunto+wood+-+(1)+Ambientada.jpg">
-              <a id="salaEstarModalTrigger" data-bs-toggle="modal" data-bs-target="#salaEstarModal" class="stretched-link"></a>
+    </div>
+  </div> 
+   
+ 
+   <div class="botaotopo p-2">
+     <a href="#estudio" class="streched-link" title="Voltar para o topo">^</a>
+   </div>
+   
+   
+    <!-- MENU   --> 
+   <div class="menu-anim-trigger"></div>
+   
+   <div class="fix">
+    <div class=" menu-anim text-center justify-content-center flexbox menu py-2 navbar navbar-expand-md">     
+      
+      <a class="botao navbar-brand" href="#estudio" style="border-style: hidden; color: #F7F7F7;">e-Studio</a>
+      
+      <a class="botao" href="#imagens">Imagens</a>
+      
+      <a class="botao" href="#videos">Videos</a>      
+      
+      <a class="botao" href="#tour360">360º</a>
+    </div></div>
+   
+<div class="fill" style="height: 60px" id="imagens"></div>  
+     <h1 class="titulo mb-n4"> Imagens </h1>
+     <div class="slash-full mt-n4"></div>
+   </div>  
+<!-- SELEÇÃO FIRST ROW  -->
+<div class="row no-gutters p-4 pb-2">
+  
+  <div class="col-sm-3 col-sm-push box">
+    <h3 class="subtitulo">Sala de Estar</h3>
+    <div class="slash ">&nbsp;</div>
+    <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/Conjunto+wood+-+(1)+Ambientada.jpg">
+         <a id="salaEstarModalTrigger" data-bs-toggle="modal" data-bs-target="#salaEstarModal" class="stretched-link"></a>
+  </div>
+  
+  <div class="col-sm-3 col-sm-push box">
+    <h3 class="subtitulo">Sala de Jantar</h3>
+    <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/Conjunto+Serenity+Marrom+Am%C3%AAndoa+-+Ambientada.jpg">
+         <a id="salaJantarModalTrigger" data-bs-toggle="modal" data-bs-target="#salaJantarModal" class="stretched-link"></a>
+    <div class="slash ">&nbsp;</div>
+  </div>
+  
+  <div class="col-sm-3 col-sm-push box rel">
+        <h3 class="subtitulo">Cozinha</h3>
+    <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Cozinha+Diana.jpg">
+     <a id="cozinhaModalTrigger" data-bs-toggle="modal" data-bs-target="#cozinhaModal" class="stretched-link"></a>
+    <div class="slash ">&nbsp;</div>
+  </div>
+  
+  <div class="col-sm-3 col-sm-push box">
+    <h3 class="subtitulo">Banheiro</h3>
+    <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Gabinete+L%C3%ADvia+(78cm)+-+Ambientada.jpg">
+         <a id="banheiroModalTrigger" data-bs-toggle="modal" data-bs-target="#banheiroModal" class="stretched-link"></a>
+    <div class="slash ">&nbsp;</div>
+  </div>
+  
+</div>
+<!-- SECOND ROW-->
+<div class="row no-gutters p-4 py-2 ">
+  
+  <div class="col-sm-3 col-sm-push box">
+    <h3 class="subtitulo">Escritório</h3>
+    <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/8+-+Ambientada.jpg">
+    <a id="escritorioModalTrigger" data-bs-toggle="modal" data-bs-target="#escritorioModal" class="stretched-link"></a>
+    <div class="slash ">&nbsp;</div>
+  </div>
+  
+  <div class="col-sm-3 col-sm-push box">
+   <h3 class="subtitulo">Quarto</h3>
+    <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Q+01.1.jpg">
+    <a id="quartoModalTrigger" data-bs-toggle="modal" data-bs-target="#quartoModal" class="stretched-link"></a>
+    <div class="slash ">&nbsp;</div>
+  </div>
+  
+  <div class="col-sm-3 col-sm-push box">
+     <h3 class="subtitulo">Infantil</h3>
+    <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/2761.156+zoom.jpg">
+    <a id="infantilModalTrigger" data-bs-toggle="modal" data-bs-target="#infantilModal" class="stretched-link"></a>
+    <div class="slash ">&nbsp;</div>
+  </div>
+  
+  <div class="col-sm-3 col-sm-push box">
+  <h3 class="subtitulo">Área de serviço</h3>
+    <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/Multiuso-1333.jpg-2.jpg">
+     <a id="areaServicoModalTrigger" data-bs-toggle="modal" data-bs-target="#areaServicoModal" class="stretched-link"></a>
+    <div class="slash ">&nbsp;</div>
+  </div>
+  
+</div>
+<!--  ////////////////////////////////////////////////////////////////////////////// -->
+</div> 
+ <!-- SALA ESTAR MODAL -->
+  <div class="modal fade" id="salaEstarModal" tabindex="-1" aria-labelledby="salaEstarModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
+        
+        <div class="row no-gutters justify-content-between">
+          <h3 class="subtitulo"> Sala de Estar </h3> 
+          <button type="button p-0" data-bs-dismiss="modal">
+            <i class="fas fa-x"></i>              
+            </button>
+        </div>
+        <div class="container-fluid ml-4">
+          
+          <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
+            
+            <!-- 1 -->
+            <div class="card rounded-0 border-0 col-sm-10 p-0 m-2 mx-4 card-modal card-modal--large"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/1690220309044.JPEG" class="h-100 w-100"> 
+            </div> 
+            
+            <!-- 2 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal card-modal--large"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/1690220309914.JPEG" class="h-100 w-100"> 
+            </div> 
+            
+            <!-- 3 -->
+            <div class="card rounded-0 border-0 col-3 p-0 m-2 card-modal">
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/1690220310848.JPEG" class="h-100 w-100"> </div> 
+            
+            <!-- 4 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/2739.130+zoom.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 5 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/Cadeira+2+Lugares+Bege+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 6 -->
+            <div class=" card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/Conjunto+wood+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <!-- 7 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/MP1005.588+zoom.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 8 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/MP1021.561+zoom.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 0 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/MP3384.174+zoom.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 10 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/PN-2205+Branco.Nogal+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 11 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/Puff+Courinho+Branco+zoom.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 12 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/Rack+I+com+Painel+(Off+White-Cinamomo)+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 13 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/SE+07.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 14 -->
+            <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal">
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/SE+09.jpg" class="h-100 w-100"> </div> 
+       
           </div>
-
-          <div class="col-sm-3 col-sm-push box">
-              <h3 class="subtitulo">Sala de Jantar</h3>
-              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/Conjunto+Serenity+Marrom+Am%C3%AAndoa+-+Ambientada.jpg">
-              <a id="salaJantarModalTrigger" data-bs-toggle="modal" data-bs-target="#salaJantarModal" class="stretched-link"></a>
-              <div class="slash ">&nbsp;</div>
-          </div>
-
-          <div class="col-sm-3 col-sm-push box rel">
-              <h3 class="subtitulo">Cozinha</h3>
-              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Cozinha+Diana.jpg">
-              <a id="cozinhaModalTrigger" data-bs-toggle="modal" data-bs-target="#cozinhaModal" class="stretched-link"></a>
-              <div class="slash ">&nbsp;</div>
-          </div>
-
-          <div class="col-sm-3 col-sm-push box">
-              <h3 class="subtitulo">Banheiro</h3>
-              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Gabinete+L%C3%ADvia+(78cm)+-+Ambientada.jpg">
-              <a id="banheiroModalTrigger" data-bs-toggle="modal" data-bs-target="#banheiroModal" class="stretched-link"></a>
-              <div class="slash ">&nbsp;</div>
-          </div>
-
+        </div><!-- END CONTAINER -->
       </div>
-      <!-- SECOND ROW-->
-      <div class="row no-gutters p-4 py-2 ">
-
-          <div class="col-sm-3 col-sm-push box">
-              <h3 class="subtitulo">Escritório</h3>
-              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/8+-+Ambientada.jpg">
-              <a id="escritorioModalTrigger" data-bs-toggle="modal" data-bs-target="#escritorioModal" class="stretched-link"></a>
-              <div class="slash ">&nbsp;</div>
+    </div>
+  </div> 
+  
+  <!-- SALA JANTAR MODAL -->
+  <div class="modal fade" id="salaJantarModal" tabindex="-1" aria-labelledby="salaJantarModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
+        
+        <div class="row no-gutters justify-content-between">
+          <h3 class="subtitulo"> Sala de Jantar </h3> <button type="button p-0" data-bs-dismiss="modal"><i class="fas fa-x"></i></button>
+        </div>
+        
+        <div class="container-fluid ml-4">
+          <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
+            
+            <div class="card rounded-0 border-0 col-sm-10 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/BF-1045+BRX.Pinus+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/Conjunto+Donna+08+Cad+Cinza+Gelo+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/Conjunto+Everly+Bege+Vanila+-+Ambienta%C3%A7%C3%A3o+3.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/Conjunto+Raven+Cinza+Gelo+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class=" card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/Conjunto+Serenity+Marrom+Am%C3%AAndoa+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/EX1004.T06.T16+zoom.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/EX1005.T08.T20+zoom.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/EX1010.T15.T21+zoom.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/EX1011.T15.T19+zoom.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/Mesa+Caribe+%2B+Cadeiras+New+Dallas+Noce+Tecido+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/Mesa+Luiza+%2B+Cadeiras+New+Dallas+Preto+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/SJ-4705-BRX+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/SJ-4706%2BSJ4705-BRX+-+(1)+Ambienta%C3%A7%C3%A3o.jpg" class="h-100 w-100"> </div>
           </div>
-
-          <div class="col-sm-3 col-sm-push box">
-              <h3 class="subtitulo">Quarto</h3>
-              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Q+01.1.jpg">
-              <a id="quartoModalTrigger" data-bs-toggle="modal" data-bs-target="#quartoModal" class="stretched-link"></a>
-              <div class="slash ">&nbsp;</div>
-          </div>
-
-          <div class="col-sm-3 col-sm-push box">
-              <h3 class="subtitulo">Infantil</h3>
-              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/2761.156+zoom.jpg">
-              <a id="infantilModalTrigger" data-bs-toggle="modal" data-bs-target="#infantilModal" class="stretched-link"></a>
-              <div class="slash ">&nbsp;</div>
-          </div>
-
-          <div class="col-sm-3 col-sm-push box">
-              <h3 class="subtitulo">Área de serviço</h3>
-              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/Multiuso-1333.jpg-2.jpg">
-              <a id="areaServicoModalTrigger" data-bs-toggle="modal" data-bs-target="#areaServicoModal" class="stretched-link"></a>
-              <div class="slash ">&nbsp;</div>
-          </div>
-
+        </div><!-- END CONTAINER -->
       </div>
-      <!--  ////////////////////////////////////////////////////////////////////////////// -->
-      </div>
-      <!-- SALA ESTAR MODAL -->
-      <div class="modal fade" id="salaEstarModal" tabindex="-1" aria-labelledby="salaEstarModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-              <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
-
-                  <div class="row no-gutters justify-content-between">
-                      <h3 class="subtitulo"> Sala de Estar </h3>
-                      <button type="button p-0" data-bs-dismiss="modal">
-                          <i class="fas fa-x"></i>
-                      </button>
-                  </div>
-                  <div class="container-fluid ml-4">
-
-                      <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
-
-                          <!-- 1 -->
-                          <div class="card rounded-0 border-0 col-sm-10 p-0 m-2 mx-4 card-modal card-modal--large">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/1690220309044.JPEG" class="h-100 w-100">
-                          </div>
-
-                          <!-- 2 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal card-modal--large">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/1690220309914.JPEG" class="h-100 w-100">
-                          </div>
-
-                          <!-- 3 -->
-                          <div class="card rounded-0 border-0 col-3 p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/1690220310848.JPEG" class="h-100 w-100">
-                          </div>
-
-                          <!-- 4 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/2739.130+zoom.jpg" class="h-100 w-100">
-                          </div>
-
-                          <!-- 5 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/Cadeira+2+Lugares+Bege+-+(1)+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <!-- 6 -->
-                          <div class=" card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/Conjunto+wood+-+(1)+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <!-- 7 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/MP1005.588+zoom.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 8 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/MP1021.561+zoom.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 0 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/MP3384.174+zoom.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 10 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/PN-2205+Branco.Nogal+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 11 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/Puff+Courinho+Branco+zoom.jpg" class="h-100 w-100">
-                          </div>
-
-                          <!-- 12 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/Rack+I+com+Painel+(Off+White-Cinamomo)+-+(1)+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <!-- 13 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/SE+07.jpg" class="h-100 w-100">
-                          </div>
-
-                          <!-- 14 -->
-                          <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Estar/SE+09.jpg" class="h-100 w-100">
-                          </div>
-
-                      </div>
-                  </div><!-- END CONTAINER -->
-              </div>
+    </div>
+  </div> 
+  
+  <!-- COZINHA MODAL -->
+  <div class="modal fade" id="cozinhaModal" tabindex="-1" aria-labelledby="cozinhaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
+        <div class="row no-gutters justify-content-between">
+          <h3 class="subtitulo"> Cozinhas </h3> <button type="button p-0" data-bs-dismiss="modal"><i class="fas fa-x"></i></button>
+        </div>
+        <div class="container-fluid ml-4">
+          <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
+            <!-- 1 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/1690219637992.JPEG" class="h-100 w-100"> </div> 
+            <!-- 2 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/1690219638451.JPEG" class="h-100 w-100"> </div> 
+            <!-- 3 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/2531.010+zoom.jpg" class="h-100 w-100"> </div> 
+            <!-- 4 -->
+            <div class="card rounded-0 border-0 col-sm-10 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Cozinha+01+-+Ambientada+1.jpg" class="h-100 w-100"> </div> 
+            <!-- 5 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Cozinha+Diana.jpg" class="h-100 w-100"> </div>
+            <!-- 6 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Cozinha+Evolution+-+Ambientada+4.jpg" class="h-100 w-100"> </div>
+            <!-- 7 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Cozinha+Fabi+.jpg" class="h-100 w-100"> </div>
+            <!-- 8 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Cozinha+Grazi+-+Ambientada+Tampo.jpg" class="h-100 w-100"> </div>
+            <!-- 9 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Cozinha+Planejada+.jpg" class="h-100 w-100"> </div> 
+            <!-- 10 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/MP2078.130+zoom.jpg" class="h-100 w-100"> </div> 
+            <!-- 11 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/MP2140.130+zoom.jpg" class="h-100 w-100"> </div> 
+            <!-- 12 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/MP3412.984+zoom.png" class="h-100 w-100"> </div>
+            
+            <!-- 13 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Vercelli+03+-+Grafite.Nogal+-+(1)+Ambienta%C3%A7%C3%A3o.jpg" class="h-100 w-100"> </div> 
+            <!-- 14 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Video+1.jpg" class="h-100 w-100"> </div> 
           </div>
+        </div><!-- END CONTAINER -->
       </div>
-
-      <!-- SALA JANTAR MODAL -->
-      <div class="modal fade" id="salaJantarModal" tabindex="-1" aria-labelledby="salaJantarModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-              <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
-
-                  <div class="row no-gutters justify-content-between">
-                      <h3 class="subtitulo"> Sala de Jantar </h3> <button type="button p-0" data-bs-dismiss="modal"><i class="fas fa-x"></i></button>
-                  </div>
-
-                  <div class="container-fluid ml-4">
-                      <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
-
-                          <div class="card rounded-0 border-0 col-sm-10 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/BF-1045+BRX.Pinus+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/Conjunto+Donna+08+Cad+Cinza+Gelo+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/Conjunto+Everly+Bege+Vanila+-+Ambienta%C3%A7%C3%A3o+3.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/Conjunto+Raven+Cinza+Gelo+-+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class=" card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/Conjunto+Serenity+Marrom+Am%C3%AAndoa+-+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/EX1004.T06.T16+zoom.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/EX1005.T08.T20+zoom.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/EX1010.T15.T21+zoom.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/EX1011.T15.T19+zoom.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/Mesa+Caribe+%2B+Cadeiras+New+Dallas+Noce+Tecido+-+(1)+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/Mesa+Luiza+%2B+Cadeiras+New+Dallas+Preto+-+(1)+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/SJ-4705-BRX+-+(1)+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Sala+de+Jantar/SJ-4706%2BSJ4705-BRX+-+(1)+Ambienta%C3%A7%C3%A3o.jpg" class="h-100 w-100">
-                          </div>
-                      </div>
-                  </div><!-- END CONTAINER -->
-              </div>
+    </div>
+  </div> 
+  
+  <!-- BANHEIRO MODAL -->
+  <div class="modal fade" id="banheiroModal" tabindex="-1" aria-labelledby="banheiroModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      
+      <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
+        
+        <div class="row no-gutters justify-content-between">
+          <h3 class="subtitulo"> Banheiro </h3> 
+          <button type="button p-0" data-bs-dismiss="modal"><i class="fas fa-x"></i></button>
+        </div>
+        
+        <div class="container-fluid ml-4">
+          <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
+            
+            <div class="card rounded-0 border-0 col-sm-10 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Atenas+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/B+06.1.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/B+06.2.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Catarina+Suspenso+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class=" card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Crystal+c+P%C3%A9s+Carvalho+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Gabinete+Cec%C3%ADlia+60+cm+(Nogal)+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Gabinete+L%C3%ADvia+(78cm)+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Gabinete+L%C3%ADvia+(78cm)+-+Gavetas.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Gabinete+Lorena+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Gabinete+Valentina+%2B+Lavat%C3%B3rio+Valentina+(Linen+Grigio)+-+Ambienta%C3%A7%C3%A3o.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/MP3064.131+zoom.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Nichos+Branco+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Siena+Suspenso+Branco+-+Ambienta%C3%A7%C3%A3o+.jpg" class="h-100 w-100"> </div>
+           
           </div>
+        </div><!-- END CONTAINER -->
       </div>
-
-      <!-- COZINHA MODAL -->
-      <div class="modal fade" id="cozinhaModal" tabindex="-1" aria-labelledby="cozinhaModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-              <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
-                  <div class="row no-gutters justify-content-between">
-                      <h3 class="subtitulo"> Cozinhas </h3> <button type="button p-0" data-bs-dismiss="modal"><i class="fas fa-x"></i></button>
-                  </div>
-                  <div class="container-fluid ml-4">
-                      <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
-                          <!-- 1 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/1690219637992.JPEG" class="h-100 w-100"> </div>
-                          <!-- 2 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/1690219638451.JPEG" class="h-100 w-100"> </div>
-                          <!-- 3 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/2531.010+zoom.jpg" class="h-100 w-100"> </div>
-                          <!-- 4 -->
-                          <div class="card rounded-0 border-0 col-sm-10 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Cozinha+01+-+Ambientada+1.jpg" class="h-100 w-100"> </div>
-                          <!-- 5 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Cozinha+Diana.jpg" class="h-100 w-100"> </div>
-                          <!-- 6 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Cozinha+Evolution+-+Ambientada+4.jpg" class="h-100 w-100"> </div>
-                          <!-- 7 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Cozinha+Fabi+.jpg" class="h-100 w-100"> </div>
-                          <!-- 8 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Cozinha+Grazi+-+Ambientada+Tampo.jpg" class="h-100 w-100"> </div>
-                          <!-- 9 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Cozinha+Planejada+.jpg" class="h-100 w-100"> </div>
-                          <!-- 10 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/MP2078.130+zoom.jpg" class="h-100 w-100"> </div>
-                          <!-- 11 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/MP2140.130+zoom.jpg" class="h-100 w-100"> </div>
-                          <!-- 12 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/MP3412.984+zoom.png" class="h-100 w-100"> </div>
-
-                          <!-- 13 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Vercelli+03+-+Grafite.Nogal+-+(1)+Ambienta%C3%A7%C3%A3o.jpg" class="h-100 w-100"> </div>
-                          <!-- 14 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Cozinha/Video+1.jpg" class="h-100 w-100"> </div>
-                      </div>
-                  </div><!-- END CONTAINER -->
-              </div>
+    </div>
+  </div> 
+  
+  <!-- ESCRITORIO MODAL -->
+  <div class="modal fade" id="escritorioModal" tabindex="-1" aria-labelledby="escritorioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      
+      <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
+        
+        <div class="row no-gutters justify-content-between">
+          <h3 class="subtitulo"> Escritório </h3> 
+          <button type="button p-0" data-bs-dismiss="modal">
+            <i class="fas fa-x"></i></button>
+        </div>
+        
+        <div class="container-fluid ml-4">
+          <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
+            
+            <!-- 1 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/13+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <!-- 2 -->
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/1690219987088.JPEG" class="h-100 w-100"> </div>
+            
+            <!-- 3 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/21.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 4 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/23.1+-+Ambientada.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 5 -->
+            <div class=" card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/28+-+Ambientada.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 6 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/29+-+Ambientada.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 7 -->
+            <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/3+-+Ambientada.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 8 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/8+-+Ambientada.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 9 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/BF1069-PCE+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 10 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/E+08.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 11 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/Escrivaninha+Compacta+Branca+-+(1)+Ambienta%C3%A7%C3%A3o.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 12 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/Escrivaninha+Gamer+II+-+Ambientada+Gamer.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 13 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/Escrivaninha+Gamer+II+-+Ambientada+Home+Office.jpg" class="h-100 w-100"> </div> 
+            
+            <!-- 14 -->
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/HO-2931.jpg" class="h-100 w-100"> </div>          
+            
           </div>
+        </div><!-- END CONTAINER -->
       </div>
-
-      <!-- BANHEIRO MODAL -->
-      <div class="modal fade" id="banheiroModal" tabindex="-1" aria-labelledby="banheiroModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-
-              <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
-
-                  <div class="row no-gutters justify-content-between">
-                      <h3 class="subtitulo"> Banheiro </h3>
-                      <button type="button p-0" data-bs-dismiss="modal"><i class="fas fa-x"></i></button>
-                  </div>
-
-                  <div class="container-fluid ml-4">
-                      <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
-
-                          <div class="card rounded-0 border-0 col-sm-10 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Atenas+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/B+06.1.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/B+06.2.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Catarina+Suspenso+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <div class=" card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Crystal+c+P%C3%A9s+Carvalho+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Gabinete+Cec%C3%ADlia+60+cm+(Nogal)+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Gabinete+L%C3%ADvia+(78cm)+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Gabinete+L%C3%ADvia+(78cm)+-+Gavetas.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Gabinete+Lorena+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Gabinete+Valentina+%2B+Lavat%C3%B3rio+Valentina+(Linen+Grigio)+-+Ambienta%C3%A7%C3%A3o.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/MP3064.131+zoom.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Nichos+Branco+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Banheiro/Siena+Suspenso+Branco+-+Ambienta%C3%A7%C3%A3o+.jpg" class="h-100 w-100"> </div>
-
-                      </div>
-                  </div><!-- END CONTAINER -->
-              </div>
+    </div>
+  </div> 
+  
+  <!-- QUARTO MODAL -->
+  <div class="modal fade" id="quartoModal" tabindex="-1" aria-labelledby="quartoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      
+      <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
+        <div class="row no-gutters justify-content-between">
+          
+          <h3 class="subtitulo"> Quarto </h3> 
+          <button type="button p-0" data-bs-dismiss="modal">
+            <i class="fas fa-x"></i></button>
+        </div>
+        
+        <div class="container-fluid ml-4">
+          <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
+            
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/11.jpg" class="h-100 w-100"> </div>
+                        
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/600094+-+(1)+Ambienta%C3%A7%C3%A3o2.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Closet+Modulado+Abel+3+Gavetas+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Composi%C3%A7ao+Casal+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class=" card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Mesa+de+Cabeceira+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Mesa+de+Cabeceira+Gales+-+Nogueira+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Paris+Avel%C3%A3+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Q+01.1.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Q+05.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Roupeiro+4P-1007+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Roupeiro+Ravi+6P+-+Grafite.Grafite.Refleta+-+(1)+Ambientada+.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Roupeiro+Sevilha+Branco+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Roupeiro+Veneto+-+Preto.Refleta+-+(1)+Ambientada+3.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Sapateira+2pts+1gav+Branco+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
+            
           </div>
+        </div><!-- END CONTAINER -->
       </div>
-
-      <!-- ESCRITORIO MODAL -->
-      <div class="modal fade" id="escritorioModal" tabindex="-1" aria-labelledby="escritorioModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-
-              <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
-
-                  <div class="row no-gutters justify-content-between">
-                      <h3 class="subtitulo"> Escritório </h3>
-                      <button type="button p-0" data-bs-dismiss="modal">
-                          <i class="fas fa-x"></i>
-                      </button>
-                  </div>
-
-                  <div class="container-fluid ml-4">
-                      <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
-
-                          <!-- 1 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/13+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 2 -->
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/1690219987088.JPEG" class="h-100 w-100"> </div>
-
-                          <!-- 3 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/21.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 4 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/23.1+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 5 -->
-                          <div class=" card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/28+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 6 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/29+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 7 -->
-                          <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/3+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 8 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/8+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 9 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/BF1069-PCE+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 10 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/E+08.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 11 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/Escrivaninha+Compacta+Branca+-+(1)+Ambienta%C3%A7%C3%A3o.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 12 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/Escrivaninha+Gamer+II+-+Ambientada+Gamer.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 13 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/Escrivaninha+Gamer+II+-+Ambientada+Home+Office.jpg" class="h-100 w-100"> </div>
-
-                          <!-- 14 -->
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Escrit%C3%B3rio/HO-2931.jpg" class="h-100 w-100"> </div>
-
-                      </div>
-                  </div><!-- END CONTAINER -->
-              </div>
+    </div>
+  </div> 
+  
+  <!-- INFANTIL MODAL -->
+  <div class="modal fade" id="infantilModal" tabindex="-1" aria-labelledby="infantilModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
+        
+        <div class="row no-gutters justify-content-between">
+          <h3 class="subtitulo"> Infantil </h3>
+          <button type="button p-0" data-bs-dismiss="modal">
+            <i class="fas fa-x"></i></button>
+        </div>
+        
+        <div class="container-fluid ml-4">
+          <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
+            
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/2379.156+zoom.jpg"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/2761.156+zoom.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/5011.010+zoom.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/BF-1058+BF-1059+BF-1060+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/CM-1227++Branco.Nogal+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/Composi%C3%A7ao+Juvenil+1+-+(1)+Ambienta%C3%A7%C3%A3o.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/Dormitorio+Planejado+-+Video+1.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/GR4247+Verde+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/I+02.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/I+08.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/J+06.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/MP2952.156+zoom.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/MP3011.156+zoom.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/MP329.010+zoom.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/MP4055.156+zoom+2.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/MP4084.T01+zoom.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/MP4111+zoom.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/Op%C3%A7%C3%A3o+cor+-+Branco.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/Poltrona+de+Amamenta%C3%A7%C3%A3o+e+Puff+Bege+zoom.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/Roupeiro+4P+e+C%C3%B4moda+Rosa+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+            
           </div>
+        </div><!-- END CONTAINER -->
       </div>
-
-      <!-- QUARTO MODAL -->
-      <div class="modal fade" id="quartoModal" tabindex="-1" aria-labelledby="quartoModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-
-              <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
-                  <div class="row no-gutters justify-content-between">
-
-                      <h3 class="subtitulo"> Quarto </h3>
-                      <button type="button p-0" data-bs-dismiss="modal">
-                          <i class="fas fa-x"></i>
-                      </button>
-                  </div>
-
-                  <div class="container-fluid ml-4">
-                      <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
-
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/11.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/600094+-+(1)+Ambienta%C3%A7%C3%A3o2.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Closet+Modulado+Abel+3+Gavetas+-+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Composi%C3%A7ao+Casal+-+(1)+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class=" card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Mesa+de+Cabeceira+-+(1)+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Mesa+de+Cabeceira+Gales+-+Nogueira+-+(1)+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Paris+Avel%C3%A3+-+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Q+01.1.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Q+05.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Roupeiro+4P-1007+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Roupeiro+Ravi+6P+-+Grafite.Grafite.Refleta+-+(1)+Ambientada+.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Roupeiro+Sevilha+Branco+-+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Roupeiro+Veneto+-+Preto.Refleta+-+(1)+Ambientada+3.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Quarto/Sapateira+2pts+1gav+Branco+-+(1)+Ambientada.jpg" class="h-100 w-100"> </div>
-
-                      </div>
-                  </div><!-- END CONTAINER -->
-              </div>
+    </div>
+  </div> 
+  
+  <!-- AREA SERVIÇO MODAL -->
+  <div class="modal fade" id="areaServicoModal" tabindex="-1" aria-labelledby="areaServicoModalLabel" aria-hidden="true">
+    
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
+        
+        <div class="row no-gutters justify-content-between">
+          <h3 class="subtitulo"> Área de Serviço </h3> 
+          <button type="button p-0" data-bs-dismiss="modal">
+            <i class="fas fa-x"></i></button>
+        </div>
+        <div class="container-fluid ml-4">
+          
+          <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
+            
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/6172.010+zoom.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/CZ-139%2BCZ-140%2BCZ142-AVX-LunicTX+-+(1)+Ambientada+2.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/Kit+Lavanderia+com+A%C3%A9reo+55L+-+Ambientada+2.jpg" class="h-100 w-100">             
+            </div>
+            
+            <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/Multiuso-1333.jpg-2.jpg" class="h-100 w-100"> </div>
+            
+            <div class=" card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/Multiuso-1334.jpg" class="h-100 w-100"> </div>
+            
+            <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/Tanque+De+Lavanderia+Com+Gabinete+Branco-Preto+-+Ambientada.jpg" class="h-100 w-100"> </div>
+            
+                        <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal"> 
+              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/Tanque+De+Lavanderia+Com+Gabinete+Branco-Preto+-+Detalhe+Tanquinho.jpg" class="h-100 w-100"> </div>v
+            
           </div>
+        </div><!-- END CONTAINER -->
       </div>
+    </div>
+  </div>
+  
+<!--  ////////////////////////////////////////////////////////////////////////   -->
+<div class="fill" style="height: 100px;">&nbsp;</div>
+   
+    <!-- FOTO INSERCAO -->       
+    <div class="secao m-0 p-0" id="render">   
+      <div class="row no-gutters col-12 m-0" style="">
+        <div class="cube-pattern"></div>
+        
+        <div class="col-sm col-sm-pull p-3 text-center rel rel order-2 order-md-1 order-lg-1 order-sm-2" style=" height: 600px;cursor: pointer;">
+          
+          
+          <div class="bokeh" style="left: 50%; top: 20%;"></div>
 
-      <!-- INFANTIL MODAL -->
-      <div class="modal fade" id="infantilModal" tabindex="-1" aria-labelledby="infantilModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-              <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
+          <div class="bg-danger"><!-- ACORDEON WRAPPER -->
+            <div class="acordeon">
+   
+   <!-- 1 CHILD -->  
+     <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/foto-insercao/Teste+3.jpg">
+   
+    <!-- 2 CHILD -->  
+     <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/foto-insercao/Sem+T%C3%ADtulo-1+copiar.jpg">
+ 
+   
+   <!-- 3 CHILD -->
+     <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/foto-insercao/itens.png">
 
-                  <div class="row no-gutters justify-content-between">
-                      <h3 class="subtitulo"> Infantil </h3>
-                      <button type="button p-0" data-bs-dismiss="modal">
-                          <i class="fas fa-x"></i>
-                      </button>
-                  </div>
+   <!-- 4 CHILD -->
+     <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/foto-insercao/colcao.png">
+ </div>            
+            </div>
+          
+           
 
-                  <div class="container-fluid ml-4">
-                      <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
+          
+        </div>
 
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/2379.156+zoom.jpg">
-                          </div>
+        
+        <div class="col-lg-4 col-sm col-sm-push-12 px-4 rel order-1 order-md-2 order-lg-2 order-sm-1">
+          <div class="fill d-block d-sm-none">&nbsp;</div>    
+                    
+          <div class="titulo subtitulo" data-aos="fade-up">Foto Inserção</div>
+          
+          <p data-aos="fade-up">
+            Normalmente utilizada em produtos onde contém muitas formas e texturas. Esta possibilidade garante que o produto fique fidedígno, pois o mesmo é fotografado e posteriormente acrescentado uma cena de fundo.<br><br>
+Trata-se de uma técnica que exige muito conhecimento em perspectiva de ângulo de imagem, decoração e ambientação para que o produto fique natural na imagem de fundo.
 
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/2761.156+zoom.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/5011.010+zoom.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/BF-1058+BF-1059+BF-1060+-+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/CM-1227++Branco.Nogal+-+(1)+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/Composi%C3%A7ao+Juvenil+1+-+(1)+Ambienta%C3%A7%C3%A3o.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/Dormitorio+Planejado+-+Video+1.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/GR4247+Verde+-+(1)+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/I+02.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/I+08.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/J+06.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/MP2952.156+zoom.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/MP3011.156+zoom.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/MP329.010+zoom.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/MP4055.156+zoom+2.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/MP4084.T01+zoom.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/MP4111+zoom.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/Op%C3%A7%C3%A3o+cor+-+Branco.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/Poltrona+de+Amamenta%C3%A7%C3%A3o+e+Puff+Bege+zoom.jpg" class="h-100 w-100">
-                          </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/Infantil/Roupeiro+4P+e+C%C3%B4moda+Rosa+-+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-                      </div>
-                  </div><!-- END CONTAINER -->
-              </div>
+          </p>
+          
+        </div>
+        
+      </div>
+    </div>
+   
+    
+    <!-- FOTO IMAGENS COMEMORATIVAS -->  
+     <div class="secao pt-4" id="" style="position: relative; z-index: 10;">
+      <div class="row no-gutters col-11">  
+        
+        <!-- TEXTO -->
+        <div class="col-sm col-sm-push px-4 order-1 order-md-2 order-lg-2 order-sm-1">
+          
+          <div class=" position-sticky sticky-top" id="imgcomemorativas">
+            <div class="fill-out" style="height:250px;">&nbsp;</div>
+          <div class="titulo subtitulo" data-aos="fade-up">Imagens comemorativas</div>
+          
+          <p data-aos="fade-up">
+            As imagens temáticas vem se tornando o centro das atenções nas datas comemorativas, em especial nos e-commerces, que dão mais relevância nas ações de marketing.
+           
+          </p>
           </div>
-      </div>
-
-      <!-- AREA SERVIÇO MODAL -->
-      <div class="modal fade" id="areaServicoModal" tabindex="-1" aria-labelledby="areaServicoModalLabel" aria-hidden="true">
-
-          <div class="modal-dialog modal-xl">
-              <div class="modal-content modal-custom p-4 rounded-0 text-light " style="background-color: rgba(0,0,0,0.6);bottom: 0px;">
-
-                  <div class="row no-gutters justify-content-between">
-                      <h3 class="subtitulo"> Área de Serviço </h3>
-                      <button type="button p-0" data-bs-dismiss="modal">
-                          <i class="fas fa-x"></i>
-                      </button>
-                  </div>
-                  <div class="container-fluid ml-4">
-
-                      <div class="row no-gutters justify-content-center m-0 p-0" data-masonry='{"percentPosition": true, itemSelector: ' .card-modal', gutter: 1, horizontalOrder: true }' data-bs-backdrop="static">
-
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/6172.010+zoom.jpg" class="h-100 w-100"> </div>
-
-                          <div class="card rounded-0 border-0 col-sm-3 p-0 m-2 card-modal"> <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/CZ-139%2BCZ-140%2BCZ142-AVX-LunicTX+-+(1)+Ambientada+2.jpg" class="h-100 w-100"> </div>
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/Kit+Lavanderia+com+A%C3%A9reo+55L+-+Ambientada+2.jpg" class="h-100 w-100">
-                          </div>
-                          <div class="card rounded-0 border-0 col-sm-10 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/Multiuso-1333.jpg-2.jpg" class="h-100 w-100">
-                          </div>
-                          <div class=" card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/Multiuso-1334.jpg" class="h-100 w-100">
-                          </div>
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/Tanque+De+Lavanderia+Com+Gabinete+Branco-Preto+-+Ambientada.jpg" class="h-100 w-100">
-                          </div>
-                          <div class="card rounded-0 border-0 col-sm-3 col-sm-push p-0 m-2 card-modal">
-                              <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Ambientadas/%C3%81rea+de+Servi%C3%A7o/Tanque+De+Lavanderia+Com+Gabinete+Branco-Preto+-+Detalhe+Tanquinho.jpg" class="h-100 w-100">
-                          </div>v
-
-                      </div>
-                  </div><!-- END CONTAINER -->
-              </div>
-          </div>
-      </div>
-
-      <!--  ////////////////////////////////////////////////////////////////////////   -->
-      <div class="fill" style="height: 100px;">&nbsp;</div>
-
-      <!-- FOTO INSERCAO -->
-      <div class="secao m-0 p-0" id="render">
-          <div class="row no-gutters col-12 m-0" style="">
-              <div class="cube-pattern"></div>
-
-              <div class="col-sm-6 col-sm-pull p-3 text-center rel rel order-2 order-md-1 order-lg-1 order-sm-2" style=" height: 600px;cursor: pointer;">
-
-                  <div class="bokeh" style="left: 50%; top: 20%;"></div>
-                  <div class="mx-auto">
-                      <!-- ACORDEON WRAPPER -->
-                      <div class="acordeon">
-
-                          <!-- 1 CHILD -->
-                          <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/foto-insercao/Teste+3.jpg">
-
-                          <!-- 2 CHILD -->
-                          <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/foto-insercao/Sem+T%C3%ADtulo-1+copiar.jpg">
+        </div>
+        
+        <div class="col-sm col-sm-push p-3 text-center order-2 order-md-1 order-lg-1 order-sm-2"
+             style="padding-top: 350px;">
 
 
-                          <!-- 3 CHILD -->
-                          <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/foto-insercao/itens.png">
+          <div class="position-sticky sticky-top mx-auto">
+            <div class="d-block" style="height: 200px;">&nbsp;</div>
+             <div class="foto-insercao"
+               style="background-image: url(https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Comemorativas/Copa/BR2739.130+zoom.jpg);
+                      transform: rotate(5deg)">&nbsp;</div> 
+            <div class="bokeh" style="left: 37%; bottom: 20%;"></div>
+                      </div>      
+          
+          
+          <div class="fill">&nbsp;</div>
+          <div class="fill">&nbsp;</div>         
 
-                          <!-- 4 CHILD -->
-                          <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/foto-insercao/colcao.png">
-                      </div>
-                  </div>
-              </div>
-
-
-              <div class="col-lg-4 col-sm col-sm-push-12 px-4 rel order-1 order-md-2 order-lg-2 order-sm-1">
-                  <div class="fill d-block d-sm-none">&nbsp;</div>
-
-                  <div class="titulo subtitulo" data-aos="fade-up">Foto Inserção</div>
-
-                  <p data-aos="fade-up">
-                      Normalmente utilizada em produtos onde contém muitas formas e texturas. Esta possibilidade garante que o produto fique fidedígno, pois o mesmo é fotografado e posteriormente acrescentado uma cena de fundo.<br><br>
-                      Trata-se de uma técnica que exige muito conhecimento em perspectiva de ângulo de imagem, decoração e ambientação para que o produto fique natural na imagem de fundo.
-
-                  </p>
-
-              </div>
-
-          </div>
-      </div>
-
-
-      <!-- FOTO IMAGENS COMEMORATIVAS -->
-      <div class="secao pt-4" id="" style="position: relative; z-index: 10;">
-          <div class="row no-gutters col-11">
-
-              <!-- TEXTO -->
-              <div class="col-sm-6 col-sm-push px-4 order-1 order-md-2 order-lg-2 order-sm-1">
-
-                  <div class=" position-sticky sticky-top" id="imgcomemorativas">
-                      <div class="fill-out" style="height:250px;">&nbsp;</div>
-                      <div class="titulo subtitulo" data-aos="fade-up">Imagens comemorativas</div>
-
-                      <p data-aos="fade-up">
-                          As imagens temáticas vem se tornando o centro das atenções nas datas comemorativas, em especial nos e-commerces, que dão mais relevância nas ações de marketing.
-
-                      </p>
-                  </div>
-              </div>
-
-              <div class="col-sm col-sm-push p-3 text-center order-2 order-md-1 order-lg-1 order-sm-2"
-                   style="padding-top: 350px;">
-
-
-                  <div class="position-sticky sticky-top mx-auto">
-                      <div class="d-block" style="height: 200px;">&nbsp;</div>
-                      <div class="foto-insercao"
-                           style="background-image: url(https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Comemorativas/Copa/BR2739.130+zoom.jpg);
-                      transform: rotate(5deg)">&nbsp;</div>
-                      <div class="bokeh" style="left: 37%; bottom: 20%;"></div>
-                  </div>
-
-
-                  <div class="fill">&nbsp;</div>
-                  <div class="fill">&nbsp;</div>
-
-                  <div class=" position-sticky sticky-top  mx-auto">
-                      <div class="fill" style="height: 200px;">&nbsp;</div>
-                      <div class="foto-insercao"
-                           style="background-image: url(https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Comemorativas/Natal/ambientada+1.jpg);
-                      transform: rotate(-7deg)">&nbsp;</div>
-                  </div>
-
-
-                  <div class="fill">&nbsp;</div>
-                  <div class="fill">&nbsp;</div>
-
-                  <div class=" position-sticky sticky-top  mx-auto">
-                      <div class="fill" style="height: 200px;">&nbsp;</div>
-                      <div class="foto-insercao"
-                           style="background-image: url(https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Comemorativas/Copa/BR3138.156+zoom.jpg);
-                      transform: rotate(7deg)">&nbsp;</div>
-                  </div>
-
-                  <div class="fill" style="height: 100px">&nbsp;</div>
-                  <div class=" position-sticky sticky-top  mx-auto">
-                      <div class="fill" style="height: 200px;">&nbsp;</div>
-                      <div class="foto-insercao"
-                           style="background-image: url(https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Comemorativas/Natal/ambientada+3.jpg); transform: rotate(-3deg)">&nbsp;</div>
-                  </div>
-
-                  <div class="fill">&nbsp;</div>
-                  <div class="fill" style="height: 100px">&nbsp;</div>
-                  <div class=" position-sticky sticky-top  mx-auto">
-                      <div class="fill" style="height: 200px;">&nbsp;</div>
-                      <div class="foto-insercao"
-                           style="background-image: url(https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Comemorativas/Copa/BR3555.678+zoom.jpg); transform: rotate(5deg)">&nbsp;</div>
-                  </div>
-              </div>
-
-
-          </div>
-      </div>
-
-      <!-- MODELAGEM -->
-      <div class="secao" id="render">
-          <div class="enviroment"></div>
-          <div class="row no-gutters justify-content-center m-0">
-
-              <div class="col-sm-4 col-sm-push rel px-4 order-md-2 order-lg-2 order-sm-1 order-1">
-                  <div class="fill" style="height: 350px">&nbsp;</div>
-                  <div class="titulo subtitulo" data-aos="fade-up">Modelagem</div>
-                  <div class="bokeh" style="top: 5%; right: -150%; transform: rotate(-90deg)"></div>
-                  <p data-aos="fade-up">
-                      Muito utilizada em datas comerciais, elevando o engajamento com os lojistas, especialmente os e-commerces que passam a utilizar os produtos para as vitrines das campanhas.
-                  </p>
-
-              </div>
-
-
-
-              <div class="col-sm-6 col-sm-push-12 col-lg-4 col-md-6 p-3 text-center  order-md-1 order-lg-1 order-sm-2 order-2">
-                  <div class="bokeh" style="bottom: 5%; left: 17%; transform: rotate(-90deg)"></div>
-                  <div class="fill-out" style="height: 250px">&nbsp;</div>
-
-                  <div id="juxtapose-wrapper" class="juxtapose mx-auto w-100" data-startingposition="50%" data-showlabels="false" data-showcredits="false" data-animate="true">
-                      <div class="juxtapose">
-                          <!-- PRIMEIRA IMAGEM -->
-                          <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Modelagem/CADEIRA+BELINI.png" />
-
-                          <!-- SEGUNDA IMAGEM -->
-                          <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Modelagem/33+zoom.jpg" />
+                    <div class=" position-sticky sticky-top  mx-auto">
+            <div class="fill" style="height: 200px;">&nbsp;</div>
+             <div class="foto-insercao"
+               style="background-image: url(https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Comemorativas/Natal/ambientada+1.jpg);
+                      transform: rotate(-7deg)">&nbsp;</div> 
                       </div>
 
-                      <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
-                      <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
-                  </div>
+          
+          <div class="fill">&nbsp;</div>
+          <div class="fill">&nbsp;</div>
 
-
-              </div>
-
-
-          </div>
-
-      </div>
-
-      <div class="fill"></div>
-
-      <div class="rel" id="videos">
-          <h1 class="titulo mb-n4"> Vídeos </h1>
-          <div class="slash-full mt-n4"></div>
-      </div>
-      <div class="fill"></div>
-      <!--  VIDEOS  -->
-      <div class="fill">&nbsp;</div>
-
-      <div class="row no-gutters justify-content-center ">
-
-          <!--  PARIS  -->
-          <div class="video col-sm-4 col-md-3 col-sm-push-12 m-2">
-              <video id="my-video"
-                     class="video-js"
-                     controls
-                     preload="auto"
-                     width="100%"
-                     height="100%"
-                     poster=""
-                     data-setup="{}">
-                  <source src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/videos/paris.mp4" type="video/mp4" />
-              </video>
-
-          </div>
-
-          <!-- COZINHA PLANEJADA -->
-          <div class="video col-sm-4 col-md-3 col-sm-pull-12 m-2">
-              <video id="my-video"
-                     class="video-js"
-                     controls
-                     preload="auto"
-                     width="100%"
-                     height="100%"
-                     poster="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/posters/cozinha-poster.jpg"
-                     data-setup="{}">
-                  <source src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/videos/cozinha.mp4" type="video/mp4" />
-              </video>
-          </div>
-
-          <!--   LAURA -->
-          <div class="video col-sm-4 col-md-3 col-sm-push-12 m-2">
-              <video id="my-video"
-                     class="video-js"
-                     controls
-                     preload="auto"
-                     width="100%"
-                     height="100%"
-                     poster="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/posters/laura-poster.jpg"
-                     data-setup="{}">
-                  <source src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/videos/Laura.mp4" type="video/mp4" />
-              </video>
-          </div>
-
-          <!--   SALINAS -->
-          <div class="video col-sm-4 col-md-3 col-sm-pull-12 m-2">
-              <video id="my-video"
-                     class="video-js"
-                     controls
-                     preload="auto"
-                     width="100%"
-                     height="100%"
-                     poster="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/posters/atualle-poster.jpg"
-                     data-setup="{}">
-                  <source src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/videos/Salinas.mp4" type="video/mp4" />
-              </video>
-          </div>
-
-          <!--   VENETTO -->
-          <div class="video col-sm-4 col-md-3 col-sm-push-12 m-2">
-              <video id="my-video"
-                     class="video-js"
-                     controls
-                     preload="auto"
-                     width="100%"
-                     height="100%"
-                     poster="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/posters/veneto-poster.jpg"
-                     data-setup="{}">
-                  <source src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/videos/Veneto.mp4" type="video/mp4" />
-              </video>
-          </div>
-
-      </div>
-
-      <div class="fill">&nbsp;</div>
-
-      <!-- ARTES VISUAIS -->
-      <div class="secao" id="imvisual">
-
-          <div class="titulo mt-3">
-              Artes Visuais
-          </div>
-
-          <!-- IMG Esquerda -->
-          <div class="row col-lg-8 col-sm-12 mx-auto no-gutters px-4 rel">
-              <div class="col-sm col-sm-push text-center rel">
-
-                  <div class="rellax" data-rellax-speed="0.5" data-rellax-percentage="0.5" data-aos="fade-up">
-                      <!-- CATALOGO -->
-                      <!-- CATALOGO -->
-                      <div class="cover atvImg">
-                          <div class="atvImg-layer" data-img="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Catalogo/background.png"></div>
-
-                          <div class="atvImg-layer" data-img="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Catalogo/gold.png"></div>
-
-                          <div class="atvImg-layer" data-img="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Catalogo/happy.png"></div>
+                    <div class=" position-sticky sticky-top  mx-auto">
+            <div class="fill" style="height: 200px;">&nbsp;</div>
+             <div class="foto-insercao"
+               style="background-image: url(https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Comemorativas/Copa/BR3138.156+zoom.jpg);
+                      transform: rotate(7deg)">&nbsp;</div> 
                       </div>
+          
+          <div class="fill" style="height: 100px">&nbsp;</div>
+                    <div class=" position-sticky sticky-top  mx-auto">
+            <div class="fill" style="height: 200px;">&nbsp;</div>
+             <div class="foto-insercao"
+               style="background-image: url(https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Comemorativas/Natal/ambientada+3.jpg); transform: rotate(-3deg)">&nbsp;</div> 
+                      </div>
+          
+     <div class="fill">&nbsp;</div>
+          <div class="fill" style="height: 100px">&nbsp;</div>
+                    <div class=" position-sticky sticky-top  mx-auto">
+            <div class="fill" style="height: 200px;">&nbsp;</div>
+             <div class="foto-insercao"
+               style="background-image: url(https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Comemorativas/Copa/BR3555.678+zoom.jpg); transform: rotate(5deg)">&nbsp;</div> 
+                      </div>
+        </div>
+        
+        
+      </div>
+ </div>
+    
+    <!-- MODELAGEM -->  
+    <div  class="secao" id="render">     <div class="enviroment"></div>
+      <div class="row no-gutters justify-content-center m-0">
+        
+        <div class="col-sm-4 col-sm-push rel px-4 order-md-2 order-lg-2 order-sm-1 order-1">          
+          <div class="fill" style="height: 350px">&nbsp;</div>
+          <div class="titulo subtitulo" data-aos="fade-up">Modelagem</div>
+          <div class="bokeh" style="top: 5%; right: -150%; transform: rotate(-90deg)"></div>
+          <p data-aos="fade-up">
+            Muito utilizada em datas comerciais, elevando o engajamento com os lojistas, especialmente os e-commerces que passam a utilizar os produtos para as vitrines das campanhas.
+          </p>
+          
+        </div>   
+        
+        
+        
+        <div class="col-sm-6 col-sm-push-12 col-lg-4 col-md-6 p-3 text-center  order-md-1 order-lg-1 order-sm-2 order-2">
+          <div class="bokeh" style="bottom: 5%; left: 17%; transform: rotate(-90deg)"></div>
+          <div class="fill-out" style="height: 250px">&nbsp;</div>
 
-                      <script>
-                          function atvImg() {
-                              var d = document,
-                                  de = d.documentElement,
-                                  bd = d.getElementsByTagName('body')[0],
-                                  htm = d.getElementsByTagName('html')[0],
-                                  win = window,
-                                  imgs = d.querySelectorAll('.atvImg'),
-                                  totalImgs = imgs.length,
-                                  supportsTouch = 'ontouchstart' in win || navigator.msMaxTouchPoints;
+      <div id="juxtapose-wrapper" class="juxtapose mx-auto w-100" data-startingposition="50%" data-showlabels="false" data-showcredits="false" data-animate="true">
+     <div class="juxtapose">
+        <!-- PRIMEIRA IMAGEM -->
+        <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Modelagem/CADEIRA+BELINI.png" />
+       
+       <!-- SEGUNDA IMAGEM -->
+        <img src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Modelagem/33+zoom.jpg" />
+    </div>
 
-                              if (totalImgs <= 0) {
-                                  return;
-                              }
+    <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+  </div>      
 
-                              for (var l = 0; l < totalImgs; l++) {
+          
+        </div>
+        
+             
+      </div>
+      
+     </div>   
 
-                                  var thisImg = imgs[l],
-                                      layerElems = thisImg.querySelectorAll('.atvImg-layer'),
-                                      totalLayerElems = layerElems.length;
+   <div class="fill"></div>
+    
+    <div class="rel" id="videos">
+     <h1 class="titulo mb-n4"> Vídeos </h1>
+     <div class="slash-full mt-n4"></div>
+   </div>  
+   <div class="fill"></div>    
+<!--  VIDEOS  -->
+   
+   <div class="secao mt-n4">
+     <div class="cube-pattern"></div> 
+     <div class="bokeh" style="left: 47%; top: 15%;"></div>
+     <div class="bokeh" style="left: 37%; top: 20%; transform:rotate(-45deg)"></div>
+     <div class="circle-pattern-w" style="height: 80%; background-size: 100px;"></div>
+     
+  <!-- Swiper -->
+  <div class="swiper mySwiper d-block">
+    <div class="swiper-wrapper rel">
 
-                                  if (totalLayerElems <= 0) {
-                                      continue;
-                                  }
 
-                                  while (thisImg.firstChild) {
-                                      thisImg.removeChild(thisImg.firstChild);
-                                  }
+      
+    </div>
+    <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> 
+  </div>
 
-                                  var containerHTML = d.createElement('div'),
-                                      shineHTML = d.createElement('div'),
-                                      shadowHTML = d.createElement('div'),
-                                      layersHTML = d.createElement('div'),
-                                      layers = [];
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-                                  thisImg.id = 'atvImg__' + l;
-                                  containerHTML.className = 'atvImg-container';
-                                  shineHTML.className = 'atvImg-shine';
-                                  shadowHTML.className = 'atvImg-shadow';
-                                  layersHTML.className = 'atvImg-layers';
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",         
+      slidesPerView: 2,
+      grabCursor: false,
+      mousewheel: true,
+      centeredSlides: true,      
+      loop: true,
+      coverflowEffect: {
+        rotate: 00,
+        stretch: 20,
+        depth: 100,
+        modifier: 3,
+        slideShadows: true,
+      },
+      navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+    });
+  </script>
+   </div>
+ 
+   <div class="fill">&nbsp;</div>
+   
+  <div class="col-12 mx-auto row no-gutters justify-content-around">
+<!--     PARIS -->
+    <div class="col-sm-push col-sm-12 col-md-6 col-lg-4 p-4 ">
+      <video
+          id="my-video"
+          class="video-js"
+          controls
+          preload="auto"
+          width="100%"
+          height="100%"
+          poster=""
+          data-setup="{}"
+        >
+          <source src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/videos/paris.mp4" type="video/mp4" />
+          
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank"
+              >supports HTML5 video</a
+            >
+          </p>
+        </video>
+    </div>
+    
+<!--     COZINHA PLANEJADA -->
+    <div class="col-sm-push col-sm-12 col-md-6 col-lg-4 p-4">
+       <video
+          id="my-video"
+          class="video-js"
+          controls
+          preload="auto"
+          width="100%"
+          height="100%"
+          poster="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/posters/cozinha-poster.jpg"
+          data-setup="{}"
+        >
+          <source src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/videos/cozinha.mp4" type="video/mp4" />
 
-                                  for (var i = 0; i < totalLayerElems; i++) {
-                                      var layer = d.createElement('div'),
-                                          imgSrc = layerElems[i].getAttribute('data-img');
+        </video>
+    </div>
+    
+<!--     LAURA -->
+    <div class="col-sm-push col-sm-12 col-md-6 col-lg-4 p-4">
+       <video
+          id="my-video"
+          class="video-js"
+          controls
+          preload="auto"
+          width="100%"
+          height="100%"
+          poster="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/posters/laura-poster.jpg"
+          data-setup="{}"
+        >
+          <source src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/videos/Laura.mp4" type="video/mp4" />
+          
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank"
+              >supports HTML5 video</a
+            >
+          </p>
+        </video>
+    </div>
+    
+<!--     SALLINAS -->
+    <div class="col-sm-push col-sm-12 col-md-6 col-lg-4 p-4 ">
+       <video
+          id="my-video"
+          class="video-js"
+          controls
+          preload="auto"
+          width="100%"
+          height="100%"
+          poster="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/posters/atualle-poster.jpg"
+          data-setup="{}"
+        >
+          <source src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/videos/Salinas.mp4" type="video/mp4" />
+        </video>
+    </div>
+    
+<!--     VENETTO -->
+    <div class="col-sm-push col-sm-12 col-md-6 col-lg-4 p-4 ">
+       <video
+          id="my-video"
+          class="video-js"
+          controls
+          preload="auto"
+          width="100%"
+          height="100%"
+          poster="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/posters/veneto-poster.jpg"
+          data-setup="{}"
+        >
+          <source src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/videos/videos/Veneto.mp4" type="video/mp4" />
+          
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank"
+              >supports HTML5 video</a
+            >
+          </p>
+        </video>
+    </div>
+    
 
-                                      layer.className = 'atvImg-rendered-layer';
-                                      layer.setAttribute('data-layer', i);
-                                      layer.style.backgroundImage = 'url(' + imgSrc + ')';
-                                      layersHTML.appendChild(layer);
+      
+    
+  </div>
+  
+    <!-- ARTES VISUAIS -->
+     <div class="secao" id="imvisual">
+      
+      <div class="titulo mt-3">
+        Artes Visuais
+      </div>       
+       
+       <!-- IMG Esquerda -->
+       <div class="row col-lg-8 col-sm-12 mx-auto no-gutters px-4 rel">
+         <div class="col-sm col-sm-push text-center rel">
+           
+           <div class="rellax" data-rellax-speed="0.5"  data-rellax-percentage="0.5" data-aos="fade-up">
+<!-- CATALOGO -->             
+             
+<!-- CATALOGO -->
+	<div class="cover atvImg">
+		<div class="atvImg-layer" data-img="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Catalogo/background.png"></div>
+		
+		<div class="atvImg-layer" data-img="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Catalogo/gold.png"></div>
+		
+		<div class="atvImg-layer" data-img="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Catalogo/happy.png"></div>
+	</div>
 
-                                      layers.push(layer);
-                                  }
+<script>
+	function atvImg(){
+	var d = document,
+		de = d.documentElement,
+		bd = d.getElementsByTagName('body')[0],
+		htm = d.getElementsByTagName('html')[0],
+		win = window,
+		imgs = d.querySelectorAll('.atvImg'),
+		totalImgs = imgs.length,
+		supportsTouch = 'ontouchstart' in win || navigator.msMaxTouchPoints;
 
-                                  containerHTML.appendChild(shadowHTML);
-                                  containerHTML.appendChild(layersHTML);
-                                  containerHTML.appendChild(shineHTML);
-                                  thisImg.appendChild(containerHTML);
+	if(totalImgs <= 0){
+		return;
+	}
 
-                                  var w = thisImg.clientWidth || thisImg.offsetWidth || thisImg.scrollWidth;
-                                  thisImg.style.transform = 'perspective(' + w * 3 + 'px)';
+	for(var l=0;l<totalImgs;l++){
 
-                                  if (supportsTouch) {
-                                      win.preventScroll = false;
+		var thisImg = imgs[l],
+			layerElems = thisImg.querySelectorAll('.atvImg-layer'),
+			totalLayerElems = layerElems.length;
 
-                                      (function (_thisImg, _layers, _totalLayers, _shine) {
-                                          thisImg.addEventListener('touchmove', function (e) {
-                                              if (win.preventScroll) {
-                                                  e.preventDefault();
-                                              }
-                                              processMovement(e, true, _thisImg, _layers, _totalLayers, _shine);
-                                          });
-                                          thisImg.addEventListener('touchstart', function (e) {
-                                              win.preventScroll = true;
-                                              processEnter(e, _thisImg);
-                                          });
-                                          thisImg.addEventListener('touchend', function (e) {
-                                              win.preventScroll = false;
-                                              processExit(e, _thisImg, _layers, _totalLayers, _shine);
-                                          });
-                                      })(thisImg, layers, totalLayerElems, shineHTML);
-                                  } else {
-                                      (function (_thisImg, _layers, _totalLayers, _shine) {
-                                          thisImg.addEventListener('mousemove', function (e) {
-                                              processMovement(e, false, _thisImg, _layers, _totalLayers, _shine);
-                                          });
-                                          thisImg.addEventListener('mouseenter', function (e) {
-                                              processEnter(e, _thisImg);
-                                          });
-                                          thisImg.addEventListener('mouseleave', function (e) {
-                                              processExit(e, _thisImg, _layers, _totalLayers, _shine);
-                                          });
-                                      })(thisImg, layers, totalLayerElems, shineHTML);
-                                  }
-                              }
+		if(totalLayerElems <= 0){
+			continue;
+		}
 
-                              function processMovement(e, touchEnabled, elem, layers, totalLayers, shine) {
+		while(thisImg.firstChild) {
+			thisImg.removeChild(thisImg.firstChild);
+		}
+	
+		var containerHTML = d.createElement('div'),
+			shineHTML = d.createElement('div'),
+			shadowHTML = d.createElement('div'),
+			layersHTML = d.createElement('div'),
+			layers = [];
 
-                                  var bdst = bd.scrollTop || htm.scrollTop,
-                                      bdsl = bd.scrollLeft,
-                                      pageX = (touchEnabled) ? e.touches[0].pageX : e.pageX,
-                                      pageY = (touchEnabled) ? e.touches[0].pageY : e.pageY,
-                                      offsets = elem.getBoundingClientRect(),
-                                      w = elem.clientWidth || elem.offsetWidth || elem.scrollWidth,
-                                      h = elem.clientHeight || elem.offsetHeight || elem.scrollHeight,
-                                      wMultiple = 320 / w,
-                                      offsetX = 0.52 - (pageX - offsets.left - bdsl) / w,
-                                      offsetY = 0.52 - (pageY - offsets.top - bdst) / h,
-                                      dy = (pageY - offsets.top - bdst) - h / 2,
-                                      dx = (pageX - offsets.left - bdsl) - w / 2,
-                                      yRotate = (offsetX - dx) * (0.07 * wMultiple),
-                                      xRotate = (dy - offsetY) * (0.1 * wMultiple),
-                                      imgCSS = 'rotateX(' + xRotate + 'deg) rotateY(' + yRotate + 'deg)',
-                                      arad = Math.atan2(dy, dx),
-                                      angle = arad * 180 / Math.PI - 90;
+		thisImg.id = 'atvImg__'+l;
+		containerHTML.className = 'atvImg-container';
+		shineHTML.className = 'atvImg-shine';
+		shadowHTML.className = 'atvImg-shadow';
+		layersHTML.className = 'atvImg-layers';
 
-                                  if (angle < 0) {
-                                      angle = angle + 360;
-                                  }
+		for(var i=0;i<totalLayerElems;i++){
+			var layer = d.createElement('div'),
+				imgSrc = layerElems[i].getAttribute('data-img');
 
-                                  if (elem.firstChild.className.indexOf(' over') != -1) {
-                                      imgCSS += ' scale3d(1.07,1.07,1.07)';
-                                  }
-                                  elem.firstChild.style.transform = imgCSS;
+			layer.className = 'atvImg-rendered-layer';
+			layer.setAttribute('data-layer',i);
+			layer.style.backgroundImage = 'url('+imgSrc+')';
+			layersHTML.appendChild(layer);
 
-                                  shine.style.background = 'linear-gradient(' + angle + 'deg, rgba(255,255,255,' + (pageY - offsets.top - bdst) / h * 0.4 + ') 0%,rgba(255,255,255,0) 80%)';
-                                  shine.style.transform = 'translateX(' + (offsetX * totalLayers) - 0.1 + 'px) translateY(' + (offsetY * totalLayers) - 0.1 + 'px)';
+			layers.push(layer);
+		}
 
-                                  var revNum = totalLayers;
-                                  for (var ly = 0; ly < totalLayers; ly++) {
-                                      layers[ly].style.transform = 'translateX(' + (offsetX * revNum) * ((ly * 2.5) / wMultiple) + 'px) translateY(' + (offsetY * totalLayers) * ((ly * 2.5) / wMultiple) + 'px)';
-                                      revNum--;
-                                  }
-                              }
+		containerHTML.appendChild(shadowHTML);
+		containerHTML.appendChild(layersHTML);
+		containerHTML.appendChild(shineHTML);
+		thisImg.appendChild(containerHTML);
 
-                              function processEnter(e, elem) {
-                                  elem.firstChild.className += ' over';
-                              }
+		var w = thisImg.clientWidth || thisImg.offsetWidth || thisImg.scrollWidth;
+		thisImg.style.transform = 'perspective('+ w*3 +'px)';
 
-                              function processExit(e, elem, layers, totalLayers, shine) {
+		if(supportsTouch){
+			win.preventScroll = false;
 
-                                  var container = elem.firstChild;
+	        (function(_thisImg,_layers,_totalLayers,_shine) {
+				thisImg.addEventListener('touchmove', function(e){
+					if (win.preventScroll){
+						e.preventDefault();
+					}
+					processMovement(e,true,_thisImg,_layers,_totalLayers,_shine);		
+				});
+	            thisImg.addEventListener('touchstart', function(e){
+	            	win.preventScroll = true;
+					processEnter(e,_thisImg);		
+				});
+				thisImg.addEventListener('touchend', function(e){
+					win.preventScroll = false;
+					processExit(e,_thisImg,_layers,_totalLayers,_shine);		
+				});
+	        })(thisImg,layers,totalLayerElems,shineHTML);
+	    } else {
+	    	(function(_thisImg,_layers,_totalLayers,_shine) {
+				thisImg.addEventListener('mousemove', function(e){
+					processMovement(e,false,_thisImg,_layers,_totalLayers,_shine);		
+				});
+	            thisImg.addEventListener('mouseenter', function(e){
+					processEnter(e,_thisImg);		
+				});
+				thisImg.addEventListener('mouseleave', function(e){
+					processExit(e,_thisImg,_layers,_totalLayers,_shine);		
+				});
+	        })(thisImg,layers,totalLayerElems,shineHTML);
+	    }
+	}
 
-                                  container.className = container.className.replace(' over', '');
-                                  container.style.transform = '';
-                                  shine.style.cssText = '';
+	function processMovement(e, touchEnabled, elem, layers, totalLayers, shine){
 
-                                  for (var ly = 0; ly < totalLayers; ly++) {
-                                      layers[ly].style.transform = '';
-                                  }
+		var bdst = bd.scrollTop || htm.scrollTop,
+			bdsl = bd.scrollLeft,
+			pageX = (touchEnabled)? e.touches[0].pageX : e.pageX,
+			pageY = (touchEnabled)? e.touches[0].pageY : e.pageY,
+			offsets = elem.getBoundingClientRect(),
+			w = elem.clientWidth || elem.offsetWidth || elem.scrollWidth,
+			h = elem.clientHeight || elem.offsetHeight || elem.scrollHeight,
+			wMultiple = 320/w,
+			offsetX = 0.52 - (pageX - offsets.left - bdsl)/w,
+			offsetY = 0.52 - (pageY - offsets.top - bdst)/h,
+			dy = (pageY - offsets.top - bdst) - h / 2,
+			dx = (pageX - offsets.left - bdsl) - w / 2,
+			yRotate = (offsetX - dx)*(0.07 * wMultiple),
+			xRotate = (dy - offsetY)*(0.1 * wMultiple),
+			imgCSS = 'rotateX(' + xRotate + 'deg) rotateY(' + yRotate + 'deg)',
+			arad = Math.atan2(dy, dx),
+			angle = arad * 180 / Math.PI - 90;
 
-                              }
+		if (angle < 0) {
+			angle = angle + 360;
+		}
 
-                          }
+		if(elem.firstChild.className.indexOf(' over') != -1){
+			imgCSS += ' scale3d(1.07,1.07,1.07)';
+		}
+		elem.firstChild.style.transform = imgCSS;
+		
+		shine.style.background = 'linear-gradient(' + angle + 'deg, rgba(255,255,255,' + (pageY - offsets.top - bdst)/h * 0.4 + ') 0%,rgba(255,255,255,0) 80%)';
+		shine.style.transform = 'translateX(' + (offsetX * totalLayers) - 0.1 + 'px) translateY(' + (offsetY * totalLayers) - 0.1 + 'px)';	
 
-                          atvImg();
-                      </script>
-                      <!-- CATALOGO END -->
+		var revNum = totalLayers;
+		for(var ly=0;ly<totalLayers;ly++){
+			layers[ly].style.transform = 'translateX(' + (offsetX * revNum) * ((ly * 2.5) / wMultiple) + 'px) translateY(' + (offsetY * totalLayers) * ((ly * 2.5) / wMultiple) + 'px)';
+			revNum--;
+		}
+	}
+
+	function processEnter(e, elem){
+		elem.firstChild.className += ' over';
+	}
+
+	function processExit(e, elem, layers, totalLayers, shine){
+
+		var container = elem.firstChild;
+
+		container.className = container.className.replace(' over','');
+		container.style.transform = '';
+		shine.style.cssText = '';
+		
+		for(var ly=0;ly<totalLayers;ly++){
+			layers[ly].style.transform = '';
+		}
+
+	}
+
+}
+
+atvImg();
+</script>
+<!-- CATALOGO END -->             
+           </div>     
+</div>
+         
+         <div class="col-sm col-sm-push text-center px-4">
+           <div class="fill">&nbsp;</div>
+           <div class="titulo subtitulo ">Catálogo</div>
+            <p data-aos="fade-up">
+            Produzimos a gramatura do catálogo e entregamos o material final para a gráfica seguir com a prova de cores e impressão.
+
+          </p>
+         </div>
+       </div>
+       
+       <div class="fill" style="height: 200px">&nbsp;</div>
+       
+       <!-- IMG Direita -->
+       <div class="row col-lg-10 mx-auto no-gutters px-4 rel">         
+         <div class="col-sm col-sm-push text-center rel px-4">
+           <div class="fill">&nbsp;</div>
+           <div class="grid-square" style="left: 0px; top: 0px"></div>
+           <div class="titulo subtitulo " data-aos="fade-up">Banners</div>
+            <p data-aos="fade-up">
+            Com o nosso foco em e-commerce, produzimos modelos de banner com o foco na venda e promoção dos produtos seguindo os padrões que os grandes e-commerces põem em prática.
+          </p>
+         </div>
+         
+         <div class="col-sm col-sm-push text-center rel">
+           
+                      <div class="rellax mt-n4" data-rellax-speed="0.5"  data-rellax-percentage="0.5" data-aos="fade-up">
+                        <img class="img-banner" src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Diferenciais/blackfriday.gif" style="transform: rotate(2deg)">                      
+                      </div>
+           
+                      <div class="rellax mt-n3" data-rellax-speed="1"  data-rellax-percentage="1" data-aos="fade-up">                        
+ <img class="img-banner" src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Diferenciais/natal.png"  style="transform: rotate(-2deg)">                        
+                      </div> 
+           
+           
+<script>
+  var rellax = new Rellax('.rellax');</script>    
+</div>
+         </div>
+       </div>  
+   
+       <div class="fill" style="height: 200px">&nbsp;</div>
+   
+       <!-- IMG Esquerda -->
+       <div class="row col-lg-10 mx-auto no-gutters px-4 rel">
+        <div class="col-sm col-sm-push text-center">
+          <div class="rellax" data-rellax-speed="1"  data-rellax-percentage="1" data-aos="fade-up">                        
+ <img class="img-banner" src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Diferenciais/New-80-Cimento-Diferenciais.jpg"  style="transform: rotate(-2deg)">                        
+                      </div> 
+    
                   </div>
-              </div>
+       
+         <div class="col-sm col-sm-push text-center px-4">
+           <div class="bokeh" style="left: 5%; bottom: 5%; transform: scale(1.2);"></div>
+           <div class="fill">&nbsp;</div>
+           <div class="titulo subtitulo " data-aos="fade-up">Diferenciais</div>
+            <p data-aos="fade-up">
+A criação de imagens de Diferencias vem se tornando muito importante para mostrar mais do seu produtos de forma resumida e intuitiva. Afinal, sabemos que é comum o cliente quando ainda não definiu a compra olhar apenas as imagens.
+          </p>
+         </div>
+       </div>
+    </div>  
+    
+   
+    
+  <div class="titulo subtitulo  mt-3" id="imgoutras">
+        Outras Linhas
+      </div>       
+       <div class="col-sm-12 col-lg-10 mx-auto" style="display: flex; flex-flow: row wrap; justify-content: space-around;">
+         
+         <!-- CAdeira gamer --> 
+         <div class="zoom-pai">
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Cadeira+gamer/220419+-+Ambientada.jpg')"></div>
+         </div>
+         <!-- Fogao -->         
+         <div class=" zoom-pai">
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Eletro/Angulo.jpg')"></div>
+         </div>
+         <!-- Fogao -->         
+         <div class=" zoom-pai">
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Eletro/Detalhe+botoes.jpg')"></div>
+         </div>
+         
+          <!-- COOKTOP -->         
+         <div class=" zoom-pai">
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Eletro/Cooktop+-+Ambientada.jpg')"></div>
+         </div>
+         
+         <!-- Bebedouro -->
+         <div class=" zoom-pai">
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Eletro/Bebedouro+0000.jpg')"></div>
+         </div>
 
-              <div class="col-sm col-sm-push text-center px-4">
-                  <div class="fill">&nbsp;</div>
-                  <div class="titulo subtitulo ">Catálogo</div>
-                  <p data-aos="fade-up">
-                      Produzimos a gramatura do catálogo e entregamos o material final para a gráfica seguir com a prova de cores e impressão.
-
-                  </p>
-              </div>
-          </div>
-
-          <div class="fill" style="height: 200px">&nbsp;</div>
-
-          <!-- IMG Direita -->
-          <div class="row col-lg-10 mx-auto no-gutters px-4 rel">
-              <div class="col-sm col-sm-push text-center rel px-4">
-                  <div class="fill">&nbsp;</div>
-                  <div class="grid-square" style="left: 0px; top: 0px"></div>
-                  <div class="titulo subtitulo " data-aos="fade-up">Banners</div>
-                  <p data-aos="fade-up">
-                      Com o nosso foco em e-commerce, produzimos modelos de banner com o foco na venda e promoção dos produtos seguindo os padrões que os grandes e-commerces põem em prática.
-                  </p>
-              </div>
-
-              <div class="col-sm col-sm-push text-center rel">
-
-                  <div class="rellax mt-n4" data-rellax-speed="0.5" data-rellax-percentage="0.5" data-aos="fade-up">
-                      <img class="img-banner" src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Diferenciais/blackfriday.gif" style="transform: rotate(2deg)">
-                  </div>
-
-                  <div class="rellax mt-n3" data-rellax-speed="1" data-rellax-percentage="1" data-aos="fade-up">
-                      <img class="img-banner" src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Diferenciais/natal.png" style="transform: rotate(-2deg)">
-                  </div>
-
-
-                  <script>
-                      var rellax = new Rellax('.rellax');</script>
-              </div>
-          </div>
-      </div>
-
-      <div class="fill" style="height: 200px">&nbsp;</div>
-
-      <!-- IMG Esquerda -->
-      <div class="row col-lg-10 mx-auto no-gutters px-4 rel">
-          <div class="col-sm col-sm-push text-center">
-              <div class="rellax" data-rellax-speed="1" data-rellax-percentage="1" data-aos="fade-up">
-                  <img class="img-banner" src="https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Diferenciais/New-80-Cimento-Diferenciais.jpg" style="transform: rotate(-2deg)">
-              </div>
-
-          </div>
-
-          <div class="col-sm col-sm-push text-center px-4">
-              <div class="bokeh" style="left: 5%; bottom: 5%; transform: scale(1.2);"></div>
-              <div class="fill">&nbsp;</div>
-              <div class="titulo subtitulo " data-aos="fade-up">Diferenciais</div>
-              <p data-aos="fade-up">
-                  A criação de imagens de Diferencias vem se tornando muito importante para mostrar mais do seu produtos de forma resumida e intuitiva. Afinal, sabemos que é comum o cliente quando ainda não definiu a compra olhar apenas as imagens.
-              </p>
-          </div>
-      </div>
-      </div>
-
-
-
-      <div class="titulo subtitulo  mt-3" id="imgoutras">
-          Outras Linhas
-      </div>
-      <div class="col-sm-12 col-lg-10 mx-auto" style="display: flex; flex-flow: row wrap; justify-content: space-around;">
-
-          <!-- CAdeira gamer -->
-          <div class="zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Cadeira+gamer/220419+-+Ambientada.jpg')"></div>
-          </div>
-          <!-- Fogao -->
+         <!-- Forno -->         
+         <div class=" zoom-pai">
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Eletro/Forninho+3.jpg')"></div>
+         </div>
+         
+         <!-- Porta -->         
+         <div class=" zoom-pai">
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Porta/3.jpg')"></div>
+</div> 
+         <!-- Porta -->         
+         <div class=" zoom-pai">
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Porta/2.jpg')"></div></div> 
+           
           <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Eletro/Angulo.jpg')"></div>
-          </div>
-          <!-- Fogao -->
-          <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Eletro/Detalhe+botoes.jpg')"></div>
-          </div>
-
-          <!-- COOKTOP -->
-          <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Eletro/Cooktop+-+Ambientada.jpg')"></div>
-          </div>
-
-          <!-- Bebedouro -->
-          <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Eletro/Bebedouro+0000.jpg')"></div>
-          </div>
-
-          <!-- Forno -->
-          <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Eletro/Forninho+3.jpg')"></div>
-          </div>
-
-          <!-- Porta -->
-          <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Porta/3.jpg')"></div>
-          </div>
-          <!-- Porta -->
-          <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/Outras+Linhas/Porta/2.jpg')"></div>
-          </div>
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/Retrospectiva+02.jpg')"></div></div> 
 
           <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/Retrospectiva+02.jpg')"></div>
-          </div>
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/Cadeira+01.1.jpg')"></div></div> 
 
           <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/Cadeira+01.1.jpg')"></div>
-          </div>
-
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/Cadeira+01.4.jpg')"></div> </div> 
+            
           <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/Cadeira+01.4.jpg')"></div>
-          </div>
-
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/Cadeira+01.7.jpg')"></div> </div> 
+            
           <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/Cadeira+01.7.jpg')"></div>
-          </div>
-
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/PUXADOR+DE+COURO+2.jpg')"></div> </div>         
+            
+            
           <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/PUXADOR+DE+COURO+2.jpg')"></div>
-          </div>
-
-
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/Poltrona.jpg')"></div> </div> 
+            
           <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/Poltrona.jpg')"></div>
-          </div>
-
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/Cabeceira+02.jpg')"></div>  </div> 
+            
           <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/Cabeceira+02.jpg')"></div>
-          </div>
-
-          <div class=" zoom-pai">
-              <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/Torres+Conceito+-+Ambientada+2.jpg')"></div>
-          </div>
-
-      </div>
+           <div class="zoom-filho" style="background-image: url('https://estudiorender.s3.sa-east-1.amazonaws.com/apresentacao/imagens/imagens-conceito/Torres+Conceito+-+Ambientada+2.jpg')"></div></div>   
+            
+         </div>
 
 
-
-
-      <!-- OUTRAS LINHAS -->
-      <!-- CONCEITOS -->
-      <!--
+    
+    
+    <!-- OUTRAS LINHAS -->
+  
+    <!-- CONCEITOS -->
+    
+    <!--
     WIIPP
-
+    
     SCROLL EFFECTS
     https://coolcssanimation.com/element-fade-out-on-scroll/
     https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/ -->
-      <!--   ANIMAÇÃO PUXADORES
-    <div class="fill"></div>
-    <div class="anim-container">
-            <div class="puxador" style="background-color: #c9604b"> ONE
-                </div>
-            <div class="puxador" style="background-color: #dbd091">TWO
-                </div>
-            <div class="puxador" style="background-color: #79ab85">THREE
-                </div>
-            <div class="puxador" style="background-color: #8b6f94">FOUR
-                </div>
-            <div class="puxador" style="background-color: #5692b3">FIVE
-                </div>
-            <div class="bokeh" style="bottom: 5%;"></div>
-    </div>
-    <div class="fill"></div>	          -->
-      </div>
+    
+<!--   ANIMAÇÃO PUXADORES  
+<div class="fill"></div>	
+<div class="anim-container">	
+		<div class="puxador" style="background-color: #c9604b"> ONE
+			</div>
+		<div class="puxador" style="background-color: #dbd091">TWO
+			</div>
+		<div class="puxador" style="background-color: #79ab85">THREE
+			</div>
+		<div class="puxador" style="background-color: #8b6f94">FOUR
+			</div>
+		<div class="puxador" style="background-color: #5692b3">FIVE
+			</div>
+		<div class="bokeh" style="bottom: 5%;"></div>
+</div>
+<div class="fill"></div>	          -->
+ 
 
+  
 
+  
+</div> 
 
+  
+  
+  
 
+         
+         </div>
+  
+  
+       
 
-
-      </div>
-
-
-
-
-
-
-      <!-- OUTRAS LINHAS -->
-      <!-- CONCEITOS -->
-      <!--
+    
+    
+    <!-- OUTRAS LINHAS -->
+  
+    <!-- CONCEITOS -->
+    
+    <!--
     WIIPP
-
+    
     SCROLL EFFECTS
     https://coolcssanimation.com/element-fade-out-on-scroll/
     https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/ -->
-      <!--   ANIMAÇÃO PUXADORES
-    <div class="fill"></div>
-    <div class="anim-container">
-            <div class="puxador" style="background-color: #c9604b"> ONE
-                </div>
-            <div class="puxador" style="background-color: #dbd091">TWO
-                </div>
-            <div class="puxador" style="background-color: #79ab85">THREE
-                </div>
-            <div class="puxador" style="background-color: #8b6f94">FOUR
-                </div>
-            <div class="puxador" style="background-color: #5692b3">FIVE
-                </div>
-            <div class="bokeh" style="bottom: 5%;"></div>
+    
+<!--   ANIMAÇÃO PUXADORES  
+<div class="fill"></div>	
+<div class="anim-container">	
+		<div class="puxador" style="background-color: #c9604b"> ONE
+			</div>
+		<div class="puxador" style="background-color: #dbd091">TWO
+			</div>
+		<div class="puxador" style="background-color: #79ab85">THREE
+			</div>
+		<div class="puxador" style="background-color: #8b6f94">FOUR
+			</div>
+		<div class="puxador" style="background-color: #5692b3">FIVE
+			</div>
+		<div class="bokeh" style="bottom: 5%;"></div>
+</div>
+<div class="fill"></div>	          -->
+         
+    <!-- TOUR 360 -->
+    
+    <div class="titulo subtitulo " id="tour360"> Tour 360°</div>
+    
+    <div class="rel altura" style="height: 600px; width: 100%;">
+          <iframe  src="https://www.meutour360.com/tour-360/quar" allow="autoplay; fullscreen; gyroscope; accelerometer" style=" border-style: none; position: absolute; top: 0; bottom: 0; left: 5%; right: 5%; height: 100%; width: 90%;" ></iframe>
     </div>
-    <div class="fill"></div>	          -->
-      <!-- TOUR 360 -->
+    <div class="text-center">    <p>Clique em <i class="fa-solid fa-maximize"></i> para ver em tela cheia</p></div>
 
-      <div class="titulo subtitulo " id="tour360"> Tour 360°</div>
+    
 
-      <div class="rel altura" style="height: 600px; width: 100%;">
-          <iframe src="https://www.meutour360.com/tour-360/quar" allow="autoplay; fullscreen; gyroscope; accelerometer" style=" border-style: none; position: absolute; top: 0; bottom: 0; left: 5%; right: 5%; height: 100%; width: 90%;"></iframe>
-      </div>
-      <div class="text-center">    <p>Clique em <i class="fa-solid fa-maximize"></i> para ver em tela cheia</p></div>
+  
 
+  
+</div> 
+  
 
-
-
-
-
-      </div>
-
-
-
-
-      <!--     <div style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px; z-index: 5; background-image: url(https://images.unsplash.com/photo-1615800098779-1be32e60cca3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3247&q=80); "></div> -->
+  
+  
+<!--     <div style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px; z-index: 5; background-image: url(https://images.unsplash.com/photo-1615800098779-1be32e60cca3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3247&q=80); "></div> -->
   </body>
 </html>
 <!-- partial -->
